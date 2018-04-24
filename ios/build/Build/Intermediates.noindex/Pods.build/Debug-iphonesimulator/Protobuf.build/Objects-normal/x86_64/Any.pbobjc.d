@@ -1,0 +1,35 @@
+dependencies: \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/google/protobuf/Any.pbobjc.m \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Target\ Support\ Files/Protobuf/Protobuf-prefix.pch \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBProtocolBuffers_RuntimeSupport.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBProtocolBuffers.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBBootstrap.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBArray.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBRuntimeTypes.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBCodedInputStream.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBCodedOutputStream.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBWireFormat.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBDescriptor.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBDictionary.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBExtensionRegistry.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBMessage.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBRootObject.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBUnknownField.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBUnknownFieldSet.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBUtilities.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBWellKnownTypes.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/google/protobuf/Any.pbobjc.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/google/protobuf/Duration.pbobjc.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/google/protobuf/Timestamp.pbobjc.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/google/protobuf/Api.pbobjc.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/google/protobuf/Empty.pbobjc.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/google/protobuf/FieldMask.pbobjc.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/google/protobuf/SourceContext.pbobjc.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/google/protobuf/Struct.pbobjc.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/google/protobuf/Type.pbobjc.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/google/protobuf/Wrappers.pbobjc.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBDescriptor_PackagePrivate.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBExtensionInternals.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBMessage_PackagePrivate.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBRootObject_PackagePrivate.h \
+  /Users/zob/Desktop/wtriviaf/ios/Pods/Protobuf/objectivec/GPBUtilities_PackagePrivate.h

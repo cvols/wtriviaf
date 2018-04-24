@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>821390167495-ja17h9cuv3kqvdc0h8r664s98ufcj58g.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.821390167495-ja17h9cuv3kqvdc0h8r664s98ufcj58g</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBgzh222_k1wsVtxXMe_K0yMb6WyFR-la0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>821390167495</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.wtriviaf.wtriviaf</string>
+	<key>PROJECT_ID</key>
+	<string>wtriviaf-d1d0f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wtriviaf-d1d0f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:821390167495:ios:e8cd01f2cdc3a858</string>
+	<key>DATABASE_URL</key>
+	<string>https://wtriviaf-d1d0f.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,48 @@
+{
+  "name": "wtriviaf",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "babel-jest": "22.0.6",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^16.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "flow-bin": "^0.56.0",
+    "fs-extra": "^4.0.2",
+    "jest": "22.0.6",
+    "react-test-renderer": "16.2.0",
+    "replace-in-file": "^3.0.0"
+  },
+  "scripts": {
+    "android": "react-native run-android",
+    "eslint": "eslint src/*.js",
+    "flow": "flow",
+    "ios": "react-native run-ios",
+    "rename": "node ./bin/rename.js",
+    "start": "react-native start",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "dependencies": {
+    "fbjs": "^0.8.16",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-native": "^0.52.0",
+    "react-native-actionsheet": "^2.3.0",
+    "react-native-fbsdk": "^0.6.3",
+    "react-native-firebase": "^3.2.2",
+    "react-native-google-signin": "git+https://github.com/invertase/react-native-google-signin.git#v0.12.1",
+    "react-native-root-toast": "^2.2.0",
+    "react-native-vector-icons": "^4.4.2",
+    "react-navigation": "^1.0.0-beta.19",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-form": "^7.1.1",
+    "validator": "^9.0.0"
+  }
+}
