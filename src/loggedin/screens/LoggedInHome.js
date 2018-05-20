@@ -51,7 +51,7 @@ export default class Home extends React.Component<*> {
       </Screen>
     );
   }
-    /**
+  /**
    * Called when the Create a Leauge button is pressed
    */
   onCreateLogin = () => {
