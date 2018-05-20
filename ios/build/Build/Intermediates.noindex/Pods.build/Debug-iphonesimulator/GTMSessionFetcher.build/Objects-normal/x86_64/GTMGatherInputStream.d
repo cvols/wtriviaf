@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/zob/Desktop/wtriviaf/ios/Pods/GTMSessionFetcher/Source/GTMGatherInputStream.m \
-  /Users/zob/Desktop/wtriviaf/ios/Pods/Target\ Support\ Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch \
-  /Users/zob/Desktop/wtriviaf/ios/Pods/GTMSessionFetcher/Source/GTMGatherInputStream.h
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/Pods/GTMSessionFetcher/Source/GTMGatherInputStream.m \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/Pods/Target\ Support\ Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/Pods/GTMSessionFetcher/Source/GTMGatherInputStream.h

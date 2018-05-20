@@ -1,7 +1,7 @@
--injars /Users/zob/Desktop/wtriviaf/android/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar
--outjars /Users/zob/Desktop/wtriviaf/android/app/build/intermediates/multi-dex/debug/componentClasses.jar
+-injars /Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar
+-outjars /Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/multi-dex/debug/componentClasses.jar
 
--libraryjars /Users/zob/Library/Android/sdk/build-tools/26.0.1/lib/shrinkedAndroid.jar
+-libraryjars /Users/christophervolonnino/Library/Android/sdk/build-tools/26.0.1/lib/shrinkedAndroid.jar
 
 -forceprocessing
 -dontoptimize
@@ -10,7 +10,7 @@
 -dontpreverify
 -dontnote **
 -dontwarn **
--printconfiguration /Users/zob/Desktop/wtriviaf/android/app/build/intermediates/multi-dex/debug/components.flags
+-printconfiguration /Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/multi-dex/debug/components.flags
 
 
 # view AndroidManifest.xml #generated:32

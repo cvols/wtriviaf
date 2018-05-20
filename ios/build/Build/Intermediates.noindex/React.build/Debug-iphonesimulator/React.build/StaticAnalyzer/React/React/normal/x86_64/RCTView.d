@@ -1,20 +1,20 @@
 dependencies: \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Views/RCTView.m \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Views/RCTView.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Views/RCTBorderStyle.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Views/RCTComponent.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Views/RCTPointerEvents.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Views/RCTAutoInsetsProtocol.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Views/RCTBorderDrawing.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Base/RCTConvert.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Views/RCTAnimationType.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Base/RCTLog.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Base/RCTAssert.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Base/RCTUtils.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Views/UIView+React.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Modules/RCTI18nUtil.h
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/RCTView.m \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/RCTView.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/RCTComponent.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/RCTAutoInsetsProtocol.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/RCTBorderDrawing.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/UIView+React.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Modules/RCTI18nUtil.h

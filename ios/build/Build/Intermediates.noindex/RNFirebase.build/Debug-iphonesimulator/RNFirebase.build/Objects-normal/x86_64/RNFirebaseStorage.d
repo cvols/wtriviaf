@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/storage/RNFirebaseStorage.m \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/storage/RNFirebaseStorage.h
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/storage/RNFirebaseStorage.m \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/storage/RNFirebaseStorage.h

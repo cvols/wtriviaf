@@ -7,6 +7,7 @@ import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 
 import Screen from '../../ui/components/Screen';
+import Button from '../../ui/components/Button';
 
 import RNFirebaseLogo from '../../../assets/RNFirebase512x512.png';
 
@@ -30,9 +31,9 @@ const styles = StyleSheet.create({
 
 export default class Home extends React.Component<*> {
   // Set the navigation options for `react-navigation`
-  static navigationOptions = {
-    headerTitle: 'Home',
-  };
+  // static navigationOptions = {
+  //   headerTitle: 'Home',
+  // };
 
   render() {
     return (
@@ -42,8 +43,19 @@ export default class Home extends React.Component<*> {
           <Text style={styles.welcomeText}>
             Logged in
           </Text>
+          <Button
+            onPress={this.onCreateLogin}
+            text="Create a League"
+          />
         </View>
       </Screen>
     );
+  }
+    /**
+   * Called when the Create a Leauge button is pressed
+   */
+  onCreateLogin = () => {
+    // Navigate to the Login screen
+    this.props.navigation.navigate('CreateLeague');
   }
 }

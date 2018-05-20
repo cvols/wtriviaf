@@ -64,7 +64,7 @@ export default class Home extends React.Component<Props> {
         <View style={styles.welcome}>
           <Image source={RNFirebaseLogo} style={styles.image} />
           <Text style={styles.welcomeText}>
-            Welcome to the React Native Firebase Auth Starter Kit
+            Wine, Trivia, Friends!
           </Text>
         </View>
         <View style={styles.loginOptions}>
