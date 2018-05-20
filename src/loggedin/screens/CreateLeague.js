@@ -31,9 +31,6 @@ const styles = StyleSheet.create({
     borderColor: 'purple',
     // margin: 20,
   },
-  container2: {
-    flex: 1,
-  },
   labelContainer: {
     backgroundColor: 'lightskyblue',
   },
@@ -92,9 +89,9 @@ export default class CreateLeague extends React.Component<*> {
   constructor(props) {
     super(props);
     this.state = {
-      text: '',
+      leagueName: '',
       topic: '',
-      fee: 0,
+      // fee: 0,
       topics: ['Basketball', 'Animated Movies', 'Baseball', 'Action Movies', 'Chemistry', 'Bible', 'Canada', 'Biology', 'Football', 'Greek Mythology', 'Movie Quotes', 'Hip Hop Music', 'Literature', "Music Quiz 1970's", "Music Quiz Pre 1960's", 'Number Ones', 'Movie Trivia', 'Physics', 'Rock Music', 'Science', 'TV Commercial', 'Sports', 'TV Trivia Cartoons', 'Random Trivia', 'TV Trivia', 'US Civil War', "TV Trivia 1990's", 'Vocabulary - I', 'Who Sings It (Country)', 'World History', 'US Presidents', 'Vampire', 'Vocabulary - II', 'Vocabulary - III', "Who Sings It (2000's)"]
     }
   }
@@ -103,9 +100,9 @@ export default class CreateLeague extends React.Component<*> {
     this.state.topics.sort()
   }
 
-  handleChangeText = (text) => {
+  handleChangeText = (leagueName) => {
     this.setState({
-      text: text,
+      leagueName: leagueName,
     })
   }
 
@@ -115,71 +112,85 @@ export default class CreateLeague extends React.Component<*> {
     })
   }
 
-  handleChangeFee = (fee) => {
-    this.setState({
-      fee: fee,
-    })
+  // handleChangeFee = (fee) => {
+  //   this.setState({
+  //     fee: fee,
+  //   })
+  // }
+
+  onPress = () => {
+    console.log('leagueName: ', this.state.leagueName, 'topic: ', this.state.topic)
+
+    if (this.state.leagueName === '' || this.state.topic === '')
+      console.log('lol, dude your shit is empty')
+    // set up alert to tell user that they need to input a league name and choose a topic
+    else {
+      this.props.navigation.navigate('InviteFriends')
+    }
   }
 
   render() {
     return (
       // <ScrollView>
-        <Screen>
-          <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
-            <View style={styles.container}>
-              <KeyboardAvoidingView behavior="position">
-                <View style={styles.labelContainer}>
-                  <View style={styles.labelBgColor}>
-                    <Text style={styles.labelText}>League Name:</Text>
-                    <TextInput
-                      style={styles.labelInput}
-                      onChangeText={this.handleChangeText}
-                      underlineColorAndroid="transparent"
-                      placeholder="League name..."
-                      value={this.state.text}
-                    />
-                  </View>
-                </View>
-                <View style={styles.labelContainer}>
-                  <View style={styles.pickerBgColor}>
-                    <Text style={styles.pickerText}>Topic:</Text>
-                    <Picker
-                      style={styles.pickerInput}
-                      selectedValue={this.state.topic}
-                      onValueChange={this.handleChangeTopic}
-                    >
-                      {this.state.topics.map((topic, i) => {
-                        return <Picker.Item key={i} label={topic} value={topic} />
-                      })}
-                    </Picker>
-                  </View>
-                </View>
-                <View style={styles.labelContainer}>
-                  <View style={styles.labelBgColor}>
-                    <Text style={styles.labelText}>League Fee:</Text>
-                    <TextInput
-                      style={styles.labelInput}
-                      onChangeFee={this.handleChangeFee}
-                      underlineColorAndroid="transparent"
-                      placeholder="Fee to enter league"
-                      value={this.state.fee}
-                      keyboardType="numeric"
-                      keyboardAppearance='dark'
-                    />
-                  </View>
-                </View>
-                <View style={styles.buttonContainer}>
-                  <Button>
-                    <View style={styles.iconContainer}>
-                      <Icon name="md-add" style={styles.icon} />
-                    </View>
-                    Create League
-              </Button>
-                </View>
-              </KeyboardAvoidingView>
+      <Screen>
+        <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
+          <View style={styles.container}>
+            {/* <KeyboardAvoidingView behavior="position"> */}
+
+            <View style={styles.labelContainer}>
+              <View style={styles.labelBgColor}>
+                <Text style={styles.labelText}>League Name:</Text>
+                <TextInput
+                  style={styles.labelInput}
+                  onChangeText={this.handleChangeText}
+                  underlineColorAndroid="transparent"
+                  placeholder="League name..."
+                  value={this.state.leagueName}
+                />
+              </View>
             </View>
-          </TouchableWithoutFeedback>
-        </Screen>
+
+            <View style={styles.labelContainer}>
+              <View style={styles.pickerBgColor}>
+                <Text style={styles.pickerText}>Topic:</Text>
+                <Picker
+                  style={styles.pickerInput}
+                  selectedValue={this.state.topic}
+                  onValueChange={this.handleChangeTopic}
+                >
+                  {this.state.topics.map((topic, i) => {
+                    return <Picker.Item key={i} label={topic} value={topic} />
+                  })}
+                </Picker>
+              </View>
+            </View>
+
+            {/* <View style={styles.labelContainer}>
+                <View style={styles.labelBgColor}>
+                  <Text style={styles.labelText}>League Fee:</Text>
+                  <TextInput
+                    style={styles.labelInput}
+                    onChangeFee={this.handleChangeFee}
+                    underlineColorAndroid="transparent"
+                    placeholder="Fee to enter league"
+                    value={this.state.fee}
+                    keyboardType="numeric"
+                    keyboardAppearance='dark'
+                  />
+                </View>
+              </View> */}
+
+            <View style={styles.buttonContainer}>
+              <Button onPress={this.onPress} text="Create a League">
+                <View style={styles.iconContainer}>
+                  <Icon name="md-add" style={styles.icon} />
+                </View>
+                </Button>
+            </View>
+            {/* </KeyboardAvoidingView> */}
+          </View>
+        </TouchableWithoutFeedback>
+      </Screen>
       // </ScrollView>
     );
   }

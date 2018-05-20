@@ -23,6 +23,7 @@ import Profile from './Profile';
 import ReAuthScreen from '../../auth/core/screens/ReAuthScreen';
 import Lobby from './Lobby';
 import CreateLeague from './CreateLeague';
+import InviteFriends from './InviteFriends';
 
 
 type TabBarIcon = {
@@ -43,8 +44,14 @@ const styles = StyleSheet.create({
  */
 const HomeStack = StackNavigator({
   LoggedInHome: { screen: LoggedInHome },
-  CreateLeague: { 
+  CreateLeague: {
     screen: CreateLeague,
+    navigationOptions: ({ navigation }) => ({
+      tabBarVisible: false,
+    }),
+  },
+  InviteFriends: {
+    screen: InviteFriends,
     navigationOptions: ({ navigation }) => ({
       tabBarVisible: false,
     }),
