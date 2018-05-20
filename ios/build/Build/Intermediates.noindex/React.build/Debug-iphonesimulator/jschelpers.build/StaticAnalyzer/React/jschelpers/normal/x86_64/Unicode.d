@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/ReactCommon/jschelpers/Unicode.cpp \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/ReactCommon/jschelpers/Unicode.h
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/ReactCommon/jschelpers/Unicode.cpp \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/ReactCommon/jschelpers/Unicode.h

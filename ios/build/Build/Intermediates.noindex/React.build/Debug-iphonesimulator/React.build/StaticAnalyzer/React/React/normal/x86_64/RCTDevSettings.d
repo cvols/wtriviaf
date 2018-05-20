@@ -1,22 +1,22 @@
 dependencies: \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Modules/RCTDevSettings.mm \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Modules/RCTDevSettings.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Base/RCTBridge.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Base/RCTBridgeModule.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Base/RCTFrameUpdate.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Base/RCTInvalidating.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Base/RCTBridge+Private.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Base/RCTEventDispatcher.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Base/RCTLog.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Base/RCTAssert.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Base/RCTUtils.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/Profiler/RCTProfile.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h

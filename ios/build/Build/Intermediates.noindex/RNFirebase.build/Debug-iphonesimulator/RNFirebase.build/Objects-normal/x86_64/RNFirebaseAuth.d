@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/auth/RNFirebaseAuth.m \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/auth/RNFirebaseAuth.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/auth/RNFirebaseAuth.m \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/auth/RNFirebaseAuth.h \
   ../../../ios/Pods/Headers/Public/Firebase/Firebase.h \
   ../../../ios/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h \
   ../../../ios/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h \
@@ -69,14 +69,14 @@ dependencies: \
   ../../../ios/Pods/Headers/Public/FirebaseFirestore/FirebaseFirestore/FIRWriteBatch.h \
   ../../../ios/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h \
   ../../../ios/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventEmitter.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/RNFirebaseEvents.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/RNFirebaseUtil.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventEmitter.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/RNFirebaseEvents.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/RNFirebaseUtil.h \
   ../../react-native/React/Base/RCTDefines.h

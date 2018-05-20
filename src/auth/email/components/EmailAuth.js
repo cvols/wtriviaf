@@ -135,7 +135,7 @@ class EmailAuth extends React.Component<Props> {
             containerStyle={styles.forgottenPasswordContainer}
             onPress={this.onForgottenPassword}
             textStyle={styles.forgottenPasswordText}
-            text="Forgotten your password?"
+            text="Forgot password?"
           />
         )}
         <SubmitButton

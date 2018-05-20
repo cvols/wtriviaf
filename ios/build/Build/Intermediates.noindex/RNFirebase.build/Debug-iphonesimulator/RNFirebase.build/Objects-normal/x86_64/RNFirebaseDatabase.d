@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/database/RNFirebaseDatabase.m \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/database/RNFirebaseDatabase.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/database/RNFirebaseDatabase.m \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/database/RNFirebaseDatabase.h \
   ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h \
   ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h \
   ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h \
@@ -9,14 +9,14 @@ dependencies: \
   ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h \
   ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h \
   ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventEmitter.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventEmitter.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
   ../../../ios/Pods/Headers/Public/Firebase/Firebase.h \
   ../../../ios/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h \
   ../../../ios/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h \
@@ -77,6 +77,6 @@ dependencies: \
   ../../../ios/Pods/Headers/Public/FirebaseFirestore/FirebaseFirestore/FIRWriteBatch.h \
   ../../../ios/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h \
   ../../../ios/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/database/RNFirebaseDatabaseReference.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/RNFirebaseEvents.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/RNFirebaseUtil.h
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/database/RNFirebaseDatabaseReference.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/RNFirebaseEvents.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/RNFirebaseUtil.h

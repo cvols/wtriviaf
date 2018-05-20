@@ -21,6 +21,8 @@ import LinkPhone from '../../auth/phone/screens/LinkPhone';
 import LoggedInHome from './LoggedInHome';
 import Profile from './Profile';
 import ReAuthScreen from '../../auth/core/screens/ReAuthScreen';
+import Lobby from './Lobby';
+import CreateLeague from './CreateLeague';
 
 
 type TabBarIcon = {
@@ -41,9 +43,18 @@ const styles = StyleSheet.create({
  */
 const HomeStack = StackNavigator({
   LoggedInHome: { screen: LoggedInHome },
+  CreateLeague: { 
+    screen: CreateLeague,
+    navigationOptions: ({ navigation }) => ({
+      tabBarVisible: false,
+    }),
+  },
 }, {
   // Explicitly set the default screen to use
   initialRouteName: 'LoggedInHome',
+  navigationOptions: {
+    title: 'Home',
+  },
 });
 
 /*
@@ -64,6 +75,18 @@ const ProfileStack = StackNavigator({
 });
 
 /*
+ * We use a StackNavigator for the Profile tab. This allows screens to stack on top of each
+ * other and to navigate backwards and forwards between them.
+ *
+ * Find out more: https://reactnavigation.org/docs/navigators/stack
+ */
+const LobbyStack = StackNavigator({
+  Lobby: { screen: Lobby },
+}, {
+  initialRouteName: 'Lobby',
+}); 
+
+/*
  * We use a TabNavigator for the main logged in screens. Each tab consists of its own set
  * of screens.
  *
@@ -76,6 +99,13 @@ const Tabs = TabNavigator({
       tabBarLabel: 'Home',
     },
     screen: HomeStack,
+  },
+  Lobby: {
+    navigationOptions: {
+      tabBarIcon: ({ tintColor }: TabBarIcon) => <Icon name="md-list" style={[styles.icon, { color: tintColor }]} />,
+      tabBarLabel: 'Lobby',
+    },
+    screen: LobbyStack,
   },
   Profile: {
     navigationOptions: {

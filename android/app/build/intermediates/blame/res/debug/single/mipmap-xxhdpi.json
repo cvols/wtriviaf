@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
         "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
         "source": "/Users/zob/Desktop/wtriviaf/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     }

@@ -1,7 +1,7 @@
 dependencies: \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/ReactCommon/yoga/yoga/Yoga.cpp \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/ReactCommon/yoga/yoga/Yoga.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/ReactCommon/yoga/yoga/YGEnums.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/ReactCommon/yoga/yoga/YGMacros.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/ReactCommon/yoga/yoga/YGNodePrint.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/ReactCommon/yoga/yoga/Yoga-internal.h
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/ReactCommon/yoga/yoga/Yoga.cpp \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/ReactCommon/yoga/yoga/Yoga.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/ReactCommon/yoga/yoga/YGEnums.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/ReactCommon/yoga/yoga/YGMacros.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/ReactCommon/yoga/yoga/YGNodePrint.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/ReactCommon/yoga/yoga/Yoga-internal.h

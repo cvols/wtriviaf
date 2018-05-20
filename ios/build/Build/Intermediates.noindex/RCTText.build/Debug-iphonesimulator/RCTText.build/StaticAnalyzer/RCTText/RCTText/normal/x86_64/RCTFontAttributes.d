@@ -1,24 +1,24 @@
 dependencies: \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/Libraries/Text/RCTFontAttributes.m \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/Libraries/Text/RCTFontAttributes.h \
-  /Users/zob/Desktop/wtriviaf/node_modules/react-native/Libraries/Text/RCTFontAttributesDelegate.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAccessibilityManager.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFont.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
-  /Users/zob/Desktop/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/Libraries/Text/RCTFontAttributes.m \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/Libraries/Text/RCTFontAttributes.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/Libraries/Text/RCTFontAttributesDelegate.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAccessibilityManager.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFont.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h
