@@ -18,4 +18,6 @@ target 'wtriviaf' do
   # react-native-google-signin
   pod 'GoogleSignIn'
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
 end

@@ -15,12 +15,14 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
   Picker,
+  ScrollView,
 } from 'react-native';
+import { RadioButtons } from 'react-native-radio-buttons';
 
 import Screen from '../../ui/components/Screen';
-
 import { Button } from '../../ui/components/common/Button';
 import Icon from '../../ui/components/Icon';
+import API from '../../util/API';
 
 import RNFirebaseLogo from '../../../assets/RNFirebase512x512.png';
 
@@ -58,13 +60,13 @@ const styles = StyleSheet.create({
     margin: 20,
     borderRadius: 4,
   },
-  pickerText: {
+  pickerLabel: {
     fontSize: 14,
     paddingLeft: 10,
     paddingVertical: 20,
   },
   pickerInput: {
-    marginTop: -50,
+    marginTop: (Platform.OS === 'ios') ? -50 : 5,
   },
   buttonContainer: {
     marginTop: 20,
@@ -76,96 +78,102 @@ const styles = StyleSheet.create({
   },
   icon: {
     fontSize: 20,
-    color: '#fff',
+    color: 'black',
   },
 });
 
 export default class CreateLeague extends React.Component<*> {
-  // Set the navigation options for `react-navigation`
-  static navigationOptions = {
-    headerTitle: 'Create a League',
-  };
-
   constructor(props) {
     super(props);
     this.state = {
       leagueName: '',
-      topic: '',
+      category: '',
+      difficulty: '',
+      questions: [],
       // fee: 0,
-      topics: ['Basketball', 'Animated Movies', 'Baseball', 'Action Movies', 'Chemistry', 'Bible', 'Canada', 'Biology', 'Football', 'Greek Mythology', 'Movie Quotes', 'Hip Hop Music', 'Literature', "Music Quiz 1970's", "Music Quiz Pre 1960's", 'Number Ones', 'Movie Trivia', 'Physics', 'Rock Music', 'Science', 'TV Commercial', 'Sports', 'TV Trivia Cartoons', 'Random Trivia', 'TV Trivia', 'US Civil War', "TV Trivia 1990's", 'Vocabulary - I', 'Who Sings It (Country)', 'World History', 'US Presidents', 'Vampire', 'Vocabulary - II', 'Vocabulary - III', "Who Sings It (2000's)"]
+      categories: ['General Knowledge', 'Books', 'Film', 'Music', 'Musicals & Theatres', 'Television', 'Video Games', 'Board Games', 'Science & Nature', 'Computers', 'Mathematics', 'Mythology', 'Sports', 'Geography', 'History', 'Politics', 'Art', 'Celebrities', 'Animals', 'Vehicles', 'Comics', 'Gadgets', 'Japanese Anime & Manga', 'Cartoons & Animations'],
+      difficulties: ['Easy', 'Medium', 'Hard'],
     }
   }
 
   componentWillMount() {
-    this.state.topics.sort()
+    this.state.categories.sort()
   }
 
-  handleChangeText = (leagueName) => {
-    this.setState({
-      leagueName: leagueName,
-    })
-  }
+  handleChangeText = (leagueName) => this.setState({ leagueName })
 
-  handleChangeTopic = (topic) => {
-    this.setState({
-      topic: topic,
-    })
-  }
-
-  // handleChangeFee = (fee) => {
-  //   this.setState({
-  //     fee: fee,
-  //   })
-  // }
+  handleChangeCategory = (category) => this.setState({ category })
 
   onPress = () => {
-    console.log('leagueName: ', this.state.leagueName, 'topic: ', this.state.topic)
+    console.log('leagueName: ', this.state.leagueName, 'category: ', this.state.category, 'difficulty: ', this.state.difficulty)
 
-    if (this.state.leagueName === '' || this.state.topic === '')
+    if (this.state.leagueName === '')
       console.log('lol, dude your shit is empty')
-    // set up alert to tell user that they need to input a league name and choose a topic
+    // set up alert to tell user that they need to input a league name and choose a category
     else {
-      this.props.navigation.navigate('InviteFriends')
+      API.createQuizQuestions(this.state.category)
+        .then((res) => {
+          console.log('res: ', res)
+          this.setState({
+            questions: res.results,
+          })
+          console.log('this.state.questions: ', this.state.questions)
+        })
+        .catch((err) => console.log('catch: ', err))
+      // this.props.navigation.navigate('InviteFriends')
     }
   }
 
   render() {
     return (
-      // <ScrollView>
-      <Screen>
-        <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
-          <View style={styles.container}>
-            {/* <KeyboardAvoidingView behavior="position"> */}
+      <ScrollView>
+        <Screen>
+          <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
+            <View style={styles.container}>
+              {/* <KeyboardAvoidingView behavior="position"> */}
 
-            <View style={styles.labelContainer}>
-              <View style={styles.labelBgColor}>
-                <Text style={styles.labelText}>League Name:</Text>
-                <TextInput
-                  style={styles.labelInput}
-                  onChangeText={this.handleChangeText}
-                  underlineColorAndroid="transparent"
-                  placeholder="League name..."
-                  value={this.state.leagueName}
-                />
+              <View style={styles.labelContainer}>
+                <View style={styles.labelBgColor}>
+                  <Text style={styles.labelText}>League Name:</Text>
+                  <TextInput
+                    style={styles.labelInput}
+                    onChangeText={this.handleChangeText}
+                    underlineColorAndroid="transparent"
+                    placeholder="League name..."
+                    value={this.state.leagueName}
+                  />
+                </View>
               </View>
-            </View>
 
-            <View style={styles.labelContainer}>
-              <View style={styles.pickerBgColor}>
-                <Text style={styles.pickerText}>Topic:</Text>
-                <Picker
-                  style={styles.pickerInput}
-                  selectedValue={this.state.topic}
-                  onValueChange={this.handleChangeTopic}
-                >
-                  {this.state.topics.map((topic, i) => {
-                    return <Picker.Item key={i} label={topic} value={topic} />
-                  })}
-                </Picker>
+              <View style={styles.labelContainer}>
+                <View style={styles.pickerBgColor}>
+                  <Text style={styles.pickerLabel}>Category:</Text>
+                  <Picker style={styles.pickerInput}
+                    selectedValue={this.state.category}
+                    onValueChange={this.handleChangeCategory}
+                  >
+                    {this.state.categories.map((category, i) => {
+                      return <Picker.Item key={i} label={category} value={category} />
+                    })}
+                  </Picker>
+                </View>
               </View>
-            </View>
 
-            {/* <View style={styles.labelContainer}>
+              {/* <View style={styles.labelContainer}>
+                <View style={styles.pickerBgColor}>
+                  <Text style={styles.pickerLabel}>Difficulty:</Text>
+                  <Picker style={styles.pickerInput}
+                    selectedValue={this.state.difficulty}
+                    onValueChange={this.handleChangeDifficulty}
+                  >
+                    {this.state.difficulties.map((difficulty, i) => {
+                      return <Picker.Item key={i} label={difficulty} value={difficulty} />
+                    })}
+                  </Picker>
+                </View>
+              </View> */}
+
+              {/* <View style={styles.labelContainer}>
                 <View style={styles.labelBgColor}>
                   <Text style={styles.labelText}>League Fee:</Text>
                   <TextInput
@@ -180,18 +188,14 @@ export default class CreateLeague extends React.Component<*> {
                 </View>
               </View> */}
 
-            <View style={styles.buttonContainer}>
-              <Button onPress={this.onPress} text="Create a League">
-                <View style={styles.iconContainer}>
-                  <Icon name="md-add" style={styles.icon} />
-                </View>
-                </Button>
+              <View style={styles.buttonContainer}>
+                <Button onPress={this.onPress} text="Create a League" />
+              </View>
+              {/* </KeyboardAvoidingView> */}
             </View>
-            {/* </KeyboardAvoidingView> */}
-          </View>
-        </TouchableWithoutFeedback>
-      </Screen>
-      // </ScrollView>
+          </TouchableWithoutFeedback>
+        </Screen>
+      </ScrollView>
     );
   }
 }

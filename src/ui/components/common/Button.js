@@ -1,17 +1,19 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
-const Button = ({ onPress, children, text }) => {
-    const { buttonStyle, textStyle } = styles;
+class Button extends React.Component {
+    render() {
+        const { onPress, children, text } = this.props
 
-    return (
-        <TouchableOpacity onPress={onPress} style={buttonStyle}>
-            <Text style={textStyle}>
-                {text}
-            </Text>
-        </TouchableOpacity>
-    );
-};
+        const { buttonStyle, textStyle } = styles
+
+        return (
+            <TouchableOpacity onPress={onPress} style={buttonStyle}>
+                <Text style={textStyle}>{text}</Text>
+            </TouchableOpacity>
+        )
+    }
+}
 
 const styles = {
     textStyle: {
@@ -32,7 +34,7 @@ const styles = {
         marginRight: 5,
         height: 67.5,
         width: 160,
-    }
+    },
 };
 
 export { Button };
