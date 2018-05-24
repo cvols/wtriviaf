@@ -172,6 +172,8 @@ class Profile extends React.Component<Props, State> {
           )}
         <Text style={styles.nameText}>{user.displayName}</Text>
         <List>
+        <ListHeader text="Notifications" />
+          <ListItem icon="md-swap" text="Invites" onPress={this.onLinkEmail} />
           <ListHeader text="Accounts" />
           {providers}
           {!hasEmail && <ListItem icon="md-mail" text="Link Email Address" onPress={this.onLinkEmail} />}

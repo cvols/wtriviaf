@@ -8,6 +8,7 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 
 import Screen from '../../ui/components/Screen';
 import Button from '../../ui/components/Button';
+import API from '../../util/API';
 
 import RNFirebaseLogo from '../../../assets/RNFirebase512x512.png';
 
@@ -30,11 +31,12 @@ const styles = StyleSheet.create({
 });
 
 export default class Home extends React.Component<*> {
-  // Set the navigation options for `react-navigation`
-  // static navigationOptions = {
-  //   headerTitle: 'Home',
-  // };
-
+  constructor(props) {
+    super(props)
+    this.state = {
+      quizQuestions: [],
+    }
+  }
   render() {
     return (
       <Screen>
@@ -44,8 +46,16 @@ export default class Home extends React.Component<*> {
             Logged in
           </Text>
           <Button
-            onPress={this.onCreateLogin}
+            onPress={this.onCreateLeague}
             text="Create a League"
+          />
+          <Button
+            onPress={this.onFindLeague}
+            text="Find a League"
+          />
+          <Button
+            onPress={this.onPlayNow}
+            text="Play Now"
           />
         </View>
       </Screen>
@@ -54,8 +64,11 @@ export default class Home extends React.Component<*> {
   /**
    * Called when the Create a Leauge button is pressed
    */
-  onCreateLogin = () => {
-    // Navigate to the Login screen
-    this.props.navigation.navigate('CreateLeague');
+  onCreateLeague = () => this.props.navigation.navigate('CreateLeague')
+
+  onFindLeague = () => this.props.navigation.navigate('FindLeague')
+
+  onPlayNow = () => {
+    this.props.navigation.navigate('PlayNow')
   }
 }

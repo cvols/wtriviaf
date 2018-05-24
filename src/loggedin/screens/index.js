@@ -24,6 +24,8 @@ import ReAuthScreen from '../../auth/core/screens/ReAuthScreen';
 import Lobby from './Lobby';
 import CreateLeague from './CreateLeague';
 import InviteFriends from './InviteFriends';
+import FindLeague from './FindLeague';
+import PlayNow from './PlayNow';
 
 
 type TabBarIcon = {
@@ -48,12 +50,28 @@ const HomeStack = StackNavigator({
     screen: CreateLeague,
     navigationOptions: ({ navigation }) => ({
       tabBarVisible: false,
+      title: 'Create a League',
     }),
   },
   InviteFriends: {
     screen: InviteFriends,
     navigationOptions: ({ navigation }) => ({
       tabBarVisible: false,
+      title: 'Invite Friends',
+    }),
+  },
+  FindLeague: {
+    screen: FindLeague,
+    navigationOptions: ({ navigation }) => ({
+      tabBarVisible: false,
+      title: 'Find a League',
+    }),
+  },
+  PlayNow: {
+    screen: PlayNow,
+    navigationOptions: ({ navigation }) => ({
+      tabBarVisible: false,
+      title: 'Play Now',
     }),
   },
 }, {
