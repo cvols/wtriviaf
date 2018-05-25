@@ -41,10 +41,11 @@ export default class PlayNow extends Component<*> {
             correct_answer: [],
             incorrect_answers: [],
             gameOver: false,
-            category: [],
+            category: '',
             score: 0,
             total: 0,
         }
+        this.nextQuestion = this.nextQuestion.bind(this)
     }
 
     componentWillMount() {
@@ -68,15 +69,12 @@ export default class PlayNow extends Component<*> {
     }
 
     nextQuestion() {
-        let { nr, total } = this.state
-
-        if (nr === total) {
+        if (this.state.nr === this.state.total) {
             this.setState({
-                displayPopup: 'flex',
                 gameOver: true,
             })
         } else {
-            this.pushData(nr)
+            this.pushData(this.state.nr)
             this.setState({
                 questionAnswered: false,
             })
@@ -100,20 +98,19 @@ export default class PlayNow extends Component<*> {
     }
 
     render() {
-        let { nr, question, answers, correct, questionAnswered, displayPopup, gameOver, total, score, category, incorrect_answers, correct_answer } = this.state
-
         return (
             <Screen>
                 <View>
                     <Question 
-                        category={category}
-                        nr={nr}
-                        total={total}
-                        question={question}
+                        category={this.state.category}
+                        nr={this.state.nr}
+                        total={this.state.total}
+                        question={this.state.question}
                     />
                     <Answers
-                        incorrect_answers={incorrect_answers}
-                        correct_answer={correct_answer}
+                        incorrect_answers={this.state.incorrect_answers}
+                        correct_answer={this.state.correct_answer}
+                        nextQuestion={this.nextQuestion}
                     />
                 </View>
             </Screen>

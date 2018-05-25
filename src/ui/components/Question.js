@@ -8,16 +8,14 @@ import { View, Text } from 'react-native'
 
 export default class Question extends React.Component<*> {
     render() {
-        let { category, nr, total, question } = this.props
-
         return (
             <View>
                 <View>
-                    <Text>Category: {category}</Text>
-                    <Text>Question #: {nr} of {total}</Text>
+                    <Text>Category: {this.props.category}</Text>
+                    <Text>Question #: {this.props.nr} of {this.props.total}</Text>
                 </View>
                 <View>
-                    <Text>{question}</Text>
+                    <Text>{this.props.question}</Text>
                 </View>
             </View>
         )
