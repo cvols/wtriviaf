@@ -72,6 +72,7 @@ const HomeStack = StackNavigator({
     navigationOptions: ({ navigation }) => ({
       tabBarVisible: false,
       title: 'Play Now',
+      headerLeft: null,
     }),
   },
 }, {

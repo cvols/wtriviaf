@@ -1,6 +1,4 @@
 export default {
-  // create quiz name
-  // takes user category
   createQuizQuestions: function (category) {
 
     switch (category) {
@@ -108,7 +106,7 @@ export default {
   },
 
   playNow: function() {
-    const url = 'https://opentdb.com/api.php?amount=10&type=multiple'
+    const url = 'https://opentdb.com/api.php?amount=10&type=multiple&encode=url3986'
 
     return fetch(url)
       .then((res) => {
