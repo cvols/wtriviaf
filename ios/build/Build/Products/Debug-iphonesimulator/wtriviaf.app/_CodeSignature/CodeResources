@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		maJUZWqNzu8fgbQDDhWUjoEA02w=
+		v+Zi26Izd8PCo5PWcs9WTokyqmk=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -71,7 +71,7 @@
 		</data>
 		<key>GTMOAuth2ViewTouch.nib</key>
 		<data>
-		qJk7xa5OE4rlYqHzllLxp0fpPJ4=
+		ZvMksDRkqAiosSAcnx1euDYitmE=
 		</data>
 		<key>GoogleService-Info.plist</key>
 		<data>
@@ -423,7 +423,7 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		M3OASldRV8lLfr/Xp3P210fJ1cc=
+		JfADoGQD8zaa6iSeIcFv5LzJ+PI=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -463,7 +463,7 @@
 		</data>
 		<key>PlugIns/wtriviafTests.xctest/wtriviafTests</key>
 		<data>
-		McanMIKxrzeIXqmUUt5KK8V/h3g=
+		afWUQczD0aW5XKT+wC7vD3N8MoI=
 		</data>
 		<key>SimpleLineIcons.ttf</key>
 		<data>
@@ -475,7 +475,7 @@
 		</data>
 		<key>gRPCCertificates.bundle/Info.plist</key>
 		<data>
-		tetEtRJ07+NTmFr5x90P+LuyuNI=
+		m2PZDpUUwh4P6gXJEBTAfJGeTO4=
 		</data>
 		<key>gRPCCertificates.bundle/roots.pem</key>
 		<data>
@@ -488,11 +488,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			maJUZWqNzu8fgbQDDhWUjoEA02w=
+			v+Zi26Izd8PCo5PWcs9WTokyqmk=
 			</data>
 			<key>hash2</key>
 			<data>
-			XwnGShd91aghJVO88oLUzYpuBNO6KNLKtQHNZToYX+A=
+			VWatKaTMEEEufSXw6QhTmsVpmYYKufjOGtJ+KBLFgik=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
@@ -655,11 +655,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qJk7xa5OE4rlYqHzllLxp0fpPJ4=
+			ZvMksDRkqAiosSAcnx1euDYitmE=
 			</data>
 			<key>hash2</key>
 			<data>
-			bedHtGJ7/Ba5ysoPWOQoTyljxP/5kWkiagw8T+QRgPg=
+			u3IslhdNag7viJvnxWCQ8dqt2aqexZiDQGjvGc+o1Kc=
 			</data>
 		</dict>
 		<key>GoogleService-Info.plist</key>
@@ -1288,11 +1288,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			McanMIKxrzeIXqmUUt5KK8V/h3g=
+			afWUQczD0aW5XKT+wC7vD3N8MoI=
 			</data>
 			<key>hash2</key>
 			<data>
-			enRCb5ptRli+DjrFsIc1F/O1iCmEMSdBUMglPzx6OAo=
+			Qog+L17XnVgCbdJqtB7l/zHFKGK4J/qVMLGYsBpw52c=
 			</data>
 		</dict>
 		<key>SimpleLineIcons.ttf</key>
@@ -1321,11 +1321,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tetEtRJ07+NTmFr5x90P+LuyuNI=
+			m2PZDpUUwh4P6gXJEBTAfJGeTO4=
 			</data>
 			<key>hash2</key>
 			<data>
-			nqgRmB1X0SJ6H8pwXmFj7r8Dhoy/WXb8UhKfc28g7Pc=
+			MbwB/f0+TRYEIGkLeZJSSPvOqJs95pN493ddp9nHdRE=
 			</data>
 		</dict>
 		<key>gRPCCertificates.bundle/roots.pem</key>
