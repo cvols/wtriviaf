@@ -6,6 +6,18 @@
 import React from 'react'
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
 
+const getOverlayStyles = (isTrue, isFalse) => {
+    const s = [styles.answer]
+
+    if (isTrue) {
+        s.push(styles.answerCorrect)
+    } else if (isFalse) {
+        s.push(styles.answerWrong)
+    }
+
+    return s
+}
+
 export default class Answers extends React.Component<*> {
     constructor(props){
         super(props)
@@ -23,16 +35,15 @@ export default class Answers extends React.Component<*> {
             }
         }
     }
-
     
-    
-    checkAnswer = (answer) => {
+    checkAnswer = (answer, i) => {
         console.log('answer: ', answer)
         console.log('hhhhhhhhhhhhhhhhhhhhh: ', this.props.correct_answer)
 
         if (!this.props.isAnswered) {
             let isTrue = Boolean 
             let isFalse = Boolean
+
             if (answer === this.props.correct_answer) {
                 isTrue = true
                 isFalse = false 
@@ -44,7 +55,8 @@ export default class Answers extends React.Component<*> {
                 console.log('that is wrong')
             }
 
-            this.getOverlayStyles(isTrue, isFalse)
+            // this.getOverlayStyles(isTrue, isFalse, i)
+            getOverlayStyles(isTrue, isFalse, i)
 
             this.props.clickButton()
 
@@ -54,7 +66,9 @@ export default class Answers extends React.Component<*> {
         }
     }
 
-    getOverlayStyles(isTrue, isFalse) {
+    getOverlayStyles(isTrue, isFalse, i) {
+        console.log('i: ', i)
+        
             if (isTrue) {
                 this.setState({
                     style: {
@@ -96,9 +110,9 @@ export default class Answers extends React.Component<*> {
                 <View>
                     {this.props.incorrect_answers.map((answer, i) => {
                         return (
-                            <TouchableOpacity key={answer} onPress={() => this.checkAnswer(answer)}>
+                            <TouchableOpacity key={answer} onPress={() => this.checkAnswer(answer, i)}>
                                 <View style={styles.container}>
-                                    <View style={this.state.style} onPress={this.getOverlayStyles()}>
+                                <View style={getOverlayStyles()}>
                                         <Text key={i} style={styles.text}>{decodeURIComponent(answer)}</Text>
                                     </View>
                                 </View>
