@@ -17,6 +17,18 @@ import LoadingModal from './ui/components/LoadingModal';
 import LoggedIn from './loggedin/screens';
 import LoggedOut from './loggedout/screens';
 
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC6Meh56G6WFr9cagd7PY8u_NkHLslG4HE",
+    authDomain: "wtriviaf-d1d0f.firebaseapp.com",
+    databaseURL: "https://wtriviaf-d1d0f.firebaseio.com",
+    projectId: "wtriviaf-d1d0f",
+    storageBucket: "wtriviaf-d1d0f.appspot.com",
+    messagingSenderId: "821390167495"
+  };
+  firebase.initializeApp(config);
+
+
 // Configure `react-native-google-signin` with our client IDs
 GoogleSignin.configure({
   iosClientId: GOOGLE_SIGN_IN_IOS_CLIENT_ID,

@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/Pods/gRPC-ProtoRPC/src/objective-c/ProtoRPC/ProtoMethod.m \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/Pods/Target\ Support\ Files/gRPC-ProtoRPC/gRPC-ProtoRPC-prefix.pch \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/Pods/gRPC-ProtoRPC/src/objective-c/ProtoRPC/ProtoMethod.h
+  /Users/zob/Desktop/Dev/wtriviaf/ios/Pods/gRPC-ProtoRPC/src/objective-c/ProtoRPC/ProtoMethod.m \
+  /Users/zob/Desktop/Dev/wtriviaf/ios/Pods/Target\ Support\ Files/gRPC-ProtoRPC/gRPC-ProtoRPC-prefix.pch \
+  /Users/zob/Desktop/Dev/wtriviaf/ios/Pods/gRPC-ProtoRPC/src/objective-c/ProtoRPC/ProtoMethod.h
