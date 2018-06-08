@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/ReactCommon/cxxreact/JSCPerfStats.cpp \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/ReactCommon/cxxreact/JSCPerfStats.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/ReactCommon/cxxreact/JSCPerfStats.cpp \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/ReactCommon/cxxreact/JSCPerfStats.h \
+  /Users/zob/Desktop/Dev/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/zob/Desktop/Dev/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h

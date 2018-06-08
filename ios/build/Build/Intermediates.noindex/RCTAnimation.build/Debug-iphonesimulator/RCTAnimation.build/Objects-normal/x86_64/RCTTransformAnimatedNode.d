@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTTransformAnimatedNode.m \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTTransformAnimatedNode.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAnimatedNode.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTValueAnimatedNode.h
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTTransformAnimatedNode.m \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTTransformAnimatedNode.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAnimatedNode.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTValueAnimatedNode.h

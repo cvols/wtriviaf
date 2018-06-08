@@ -1,22 +1,22 @@
 dependencies: \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/ScrollView/RCTScrollContentView.m \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/ScrollView/RCTScrollContentView.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/RCTView.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/RCTBorderStyle.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/RCTComponent.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/RCTPointerEvents.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTAssert.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/UIView+React.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/ScrollView/RCTScrollView.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/RCTAutoInsetsProtocol.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTEventDispatcher.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTBridge.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTBridgeModule.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTFrameUpdate.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Base/RCTInvalidating.h \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native/React/Views/ScrollView/RCTScrollableProtocol.h
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Views/ScrollView/RCTScrollContentView.m \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Views/ScrollView/RCTScrollContentView.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Views/RCTView.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Views/RCTComponent.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Views/UIView+React.h \
+  /Users/zob/Desktop/Dev/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/zob/Desktop/Dev/wtriviaf/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Views/ScrollView/RCTScrollView.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Views/RCTAutoInsetsProtocol.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native/React/Views/ScrollView/RCTScrollableProtocol.h

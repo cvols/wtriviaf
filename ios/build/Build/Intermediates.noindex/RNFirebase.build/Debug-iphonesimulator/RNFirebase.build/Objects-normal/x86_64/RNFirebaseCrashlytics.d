@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/fabric/crashlytics/RNFirebaseCrashlytics.m \
-  /Users/christophervolonnino/Desktop/projects/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/fabric/crashlytics/RNFirebaseCrashlytics.h
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/fabric/crashlytics/RNFirebaseCrashlytics.m \
+  /Users/zob/Desktop/Dev/wtriviaf/node_modules/react-native-firebase/ios/RNFirebase/fabric/crashlytics/RNFirebaseCrashlytics.h
