@@ -96,7 +96,7 @@ export default {
 
     console.log('api category: ', category)
 
-    const url = 'https://opentdb.com/api.php?amount=1&category=' + category + '&difficulty=easy&type=multiple'
+    const url = 'https://opentdb.com/api.php?amount=2&category=' + category + '&difficulty=easy&type=multiple'
 
     return fetch(url)
       .then((res) => {
