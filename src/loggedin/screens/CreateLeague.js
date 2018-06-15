@@ -3,7 +3,7 @@
  *
  * The Logged In Home screen is a simple screen indicating that the user has logged in.
  */
-import React from 'react';
+import React from 'react'
 import {
   Image,
   StyleSheet,
@@ -16,15 +16,16 @@ import {
   Keyboard,
   Picker,
   ScrollView,
-} from 'react-native';
-import { RadioButtons } from 'react-native-radio-buttons';
+} from 'react-native'
+import { RadioButtons } from 'react-native-radio-buttons'
+import firebase from 'react-native-firebase'
 
-import Screen from '../../ui/components/Screen';
-import { Button } from '../../ui/components/common/Button';
-import Icon from '../../ui/components/Icon';
-import API from '../../util/API';
+import Screen from '../../ui/components/Screen'
+import { Button } from '../../ui/components/common/Button'
+import Icon from '../../ui/components/Icon'
+import API from '../../util/API'
 
-import RNFirebaseLogo from '../../../assets/RNFirebase512x512.png';
+import RNFirebaseLogo from '../../../assets/RNFirebase512x512.png'
 
 const styles = StyleSheet.create({
   container: {
@@ -113,11 +114,29 @@ export default class CreateLeague extends React.Component<*> {
     else {
       API.createQuizQuestions(this.state.category)
         .then((res) => {
-          console.log('res: ', res)
+          console.log('res: ', res.results)
+
           this.setState({
             questions: res.results,
           })
+
           console.log('this.state.questions: ', this.state.questions)
+
+          let authUser = firebase.auth().currentUser
+          console.log(authUser)
+
+          firebase.database().ref('quizzes/').push(
+            {
+              questions: res.results,
+              leagueName: this.state.leagueName,
+              createdId: authUser.uid,
+              createdBy: authUser.displayName,
+            }
+          ).then(() => {
+            console.log("Created quiz in DB successfully")
+          }).catch((error) => {
+            console.log(error)
+          })
         })
         .catch((err) => console.log('catch: ', err))
       // this.props.navigation.navigate('InviteFriends')

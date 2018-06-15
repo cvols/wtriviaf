@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/zob/Desktop/Dev/wtriviaf/ios/Pods/BoringSSL/crypto/bn/rsaz_exp.c \
-  /Users/zob/Desktop/Dev/wtriviaf/ios/Pods/Target\ Support\ Files/BoringSSL/BoringSSL-prefix.pch \
-  /Users/zob/Desktop/Dev/wtriviaf/ios/Pods/Headers/Private/BoringSSL/openssl/base.h \
-  /Users/zob/Desktop/Dev/wtriviaf/ios/Pods/Headers/Private/BoringSSL/openssl/opensslconf.h
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/Pods/BoringSSL/crypto/bn/rsaz_exp.c \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/Pods/Target\ Support\ Files/BoringSSL/BoringSSL-prefix.pch \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/Pods/Headers/Private/BoringSSL/openssl/base.h \
+  /Users/christophervolonnino/Desktop/projects/wtriviaf/ios/Pods/Headers/Private/BoringSSL/openssl/opensslconf.h

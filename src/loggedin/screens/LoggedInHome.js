@@ -68,5 +68,5 @@ export default class Home extends React.Component<*> {
 
   onFindLeague = () => this.props.navigation.navigate('FindLeague')
 
-  onPlayNow = () => { this.props.navigation.navigate('PlayNow') }
+  onPlayNow = () => this.props.navigation.navigate('PlayNow') 
 }
