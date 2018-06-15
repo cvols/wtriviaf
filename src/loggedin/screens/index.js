@@ -26,6 +26,7 @@ import CreateLeague from './CreateLeague';
 import InviteFriends from './InviteFriends';
 import FindLeague from './FindLeague';
 import PlayNow from './PlayNow';
+import Notifications from './Notifications';
 
 
 type TabBarIcon = {
@@ -95,6 +96,7 @@ const ProfileStack = StackNavigator({
   LinkEmail: { screen: LinkEmail },
   LinkPhone: { screen: LinkPhone },
   Profile: { screen: Profile },
+  Notifications: {screen: Notifications}
 }, {
   // Explicitly set the default screen to use
   initialRouteName: 'Profile',

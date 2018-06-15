@@ -113,5 +113,6 @@ export default {
         console.log('play now res: ', res)
         return res.json()
       })
-  }
+  },
+
 }

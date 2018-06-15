@@ -173,7 +173,7 @@ class Profile extends React.Component<Props, State> {
         <Text style={styles.nameText}>{user.displayName}</Text>
         <List>
         <ListHeader text="Notifications" />
-          <ListItem icon="md-swap" text="Invites" onPress={this.onLinkEmail} />
+          <ListItem icon="md-swap" text="Notifications" onPress={this.onNotifications} />
           <ListHeader text="Accounts" />
           {providers}
           {!hasEmail && <ListItem icon="md-mail" text="Link Email Address" onPress={this.onLinkEmail} />}
@@ -254,6 +254,10 @@ class Profile extends React.Component<Props, State> {
    */
   onEditFacebook = () => {
     this.onEditSocial(firebase.auth.FacebookAuthProvider.PROVIDER_ID);
+  }
+
+  onNotifications = () => {
+    this.props.navigation.navigate('Notifications')
   }
 
   /**
