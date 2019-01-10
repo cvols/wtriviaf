@@ -1,25 +1,14 @@
-/**
- * @flow
- *
- * The ListItem component can be used to display an item in a list with text and optional icon.
- * The item can be clickable.
- */
+// The ListItem component can be used to display an item in a list with text and optional icon.
+// The item can be clickable.
 import React from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 import Icon from '../Icon';
 import * as Theme from '../../../theme';
 
-/*
- * We use flow type to validate the Props of the component
- */
 type Props = {
-  // An optional icon to display in the list item
-  icon?: string,
-  // An optional method that will be called on clicking the item
-  onPress?: () => any,
-  // The text to display in the list item
-  text: string,
+
 }
 
 const styles = StyleSheet.create({
@@ -49,13 +38,24 @@ const styles = StyleSheet.create({
   },
 });
 
-export default (props: Props) => {
-  const { icon, onPress, text } = props;
-  return (
-    <TouchableOpacity onPress={onPress} style={styles.container}>
-      {icon && <Icon active name={icon} style={styles.icon} />}
-      <Text style={styles.text}>{text}</Text>
-      <Icon name="ios-arrow-forward" style={styles.buttonIcon} />
-    </TouchableOpacity>
-  );
-};
+export default class ListItem extends React.Component {
+  static propTypes = {
+    // An optional icon to display in the list item
+    icon: PropTypes.string,
+    // An optional method that will be called on clicking the item
+    onPress: PropTypes.func,
+    // The text to display in the list item
+    text: PropTypes.string,
+  }
+  render() {
+    const { icon, onPress, text } = this.props;
+
+    return (
+      <TouchableOpacity onPress={onPress} style={styles.container}>
+        {icon && <Icon active name={icon} style={styles.icon} />}
+        <Text style={styles.text}>{text}</Text>
+        <Icon name="ios-arrow-forward" style={styles.buttonIcon} />
+      </TouchableOpacity>
+    )
+  }
+}

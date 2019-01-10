@@ -1,49 +1,24 @@
-/**
- * @flow
- *
- * The EmailAuth component handles the email authentication flows for four cases:
- *
- * 1) Login
- * 2) Registration
- * 3) Linking
- * 4) Re-authentication
- *
- * It takes an email address, password and optional name field, passing them to firebase
- * before returning the user
- */
+// The EmailAuth component handles the email authentication flows for four cases:
+
+// 1) Login
+// 2) Registration
+// 3) Linking
+// 4) Re-authentication
+
+//It takes an email address, password and optional name field, passing them to firebase
+// before returning the user
 import React from 'react';
+import PropTypes from 'prop-types';
 import { ScrollView, StyleSheet } from 'react-native';
 import firebase from 'react-native-firebase';
 import { withNavigation } from 'react-navigation';
 import { Field, reduxForm, SubmissionError } from 'redux-form';
-import type { FormProps } from 'redux-form';
-
-import type { NavigationScreenProp } from 'react-navigation/src/TypeDefinition';
 
 import FormError from '../../../ui/components/form/FormError';
 import LinkButton from '../../../ui/components/LinkButton';
 import SubmitButton from '../../../ui/components/form/SubmitButton';
 import TextField from '../../../ui/components/form/TextField';
 import { isEmailValid, isNameValid, isPasswordValid } from '../../../util/validator';
-
-/*
- * We use flow type to validate the Props of the component
- */
-type Props = {
-  // Whether to autofocus the first field
-  autoFocus?: boolean,
-  // The text to show on the submit button
-  buttonText: string,
-  // Whether to show a name field (for registration)
-  collectName?: boolean,
-  navigation: NavigationScreenProp<*, *>,
-  // An optional function called when the auth flow has succeeded
-  onSuccess?: (Object, ?string) => any,
-  // Whether to show the forgotten password link
-  showForgottenPassword?: boolean,
-  // The type of email authentication to perform
-  type: 'link' | 'reAuth' | 'register' | 'signIn',
-} & FormProps;
 
 const styles = StyleSheet.create({
   container: {
@@ -60,9 +35,22 @@ const styles = StyleSheet.create({
   },
 });
 
-class EmailAuth extends React.Component<Props> {
-  emailInput: ?Field;
-  passwordInput: ?Field;
+class EmailAuth extends React.Component {
+  static propTypes = {
+    // Whether to autofocus the first field
+    autoFocus: PropTypes.bool.isRequired,
+    // The text to show on the submit button
+    buttonText: PropTypes.string,
+    // Whether to show a name field (for registration)
+    collectName: PropTypes.bool.isRequired,
+    // An optional function called when the auth flow has succeeded
+    onSuccess: PropTypes.func,
+    // Whether to show the forgotten password link
+    showForgottenPassword: PropTypes.bool.isRequired,
+    // The type of email authentication to perform
+    // 'link' | 'reAuth' | 'register' | 'signIn'
+    type: PropTypes.string,
+  }
 
   static defaultProps = {
     autoFocus: false,
@@ -72,6 +60,7 @@ class EmailAuth extends React.Component<Props> {
 
   componentWillMount() {
     const { type } = this.props;
+
     if (type === 'reAuth') {
       this.props.initialize({ email: firebase.auth().currentUser.email });
     }
@@ -163,7 +152,7 @@ class EmailAuth extends React.Component<Props> {
     this.props.navigation.navigate('ForgottenPassword');
   }
 
-  onSubmit = async (values: Object) => {
+  onSubmit = async values => {
     const { email, name, password } = values;
     const { navigation, onSuccess, type } = this.props;
     try {

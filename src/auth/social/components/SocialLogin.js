@@ -176,7 +176,7 @@ export default class SocialLogin extends React.Component<Props, State> {
     });
 
     let authUser = firebase.auth().currentUser;
-    let uName, email, photoUrl, uid, emailVerified, totalScore, quizesTaken;
+    let uName, email, photoUrl, uid, emailVerified, notifications
   
     if (authUser != null) {
       uName = user.displayName;
@@ -186,9 +186,7 @@ export default class SocialLogin extends React.Component<Props, State> {
       uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
                       // this value to authenticate with your backend server, if
                       // you have one. Use User.getToken() instead.
-      totalScore = 0;
-      quizesTaken = 0;
-  
+      notifications: 0;
     }
    firebase.database().ref('users/' + uid).set(
       {
@@ -197,8 +195,7 @@ export default class SocialLogin extends React.Component<Props, State> {
         photoUrl: photoUrl,
         emailVerified: emailVerified,
         uid: uid,
-        totalScore: totalScore,
-        quizesTaken: quizesTaken
+        notifications: notifications,
       }
     ).then(() => {
       console.log("Created profile in DB successfully")

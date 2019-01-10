@@ -34,9 +34,11 @@
     "react": "^16.2.0",
     "react-native": "^0.52.0",
     "react-native-actionsheet": "^2.3.0",
+    "react-native-button": "^2.3.0",
     "react-native-fbsdk": "^0.6.3",
     "react-native-firebase": "^3.2.2",
     "react-native-google-signin": "git+https://github.com/invertase/react-native-google-signin.git#v0.12.1",
+    "react-native-modalbox": "^1.5.0",
     "react-native-radio-buttons": "^1.0.0",
     "react-native-root-toast": "^2.2.0",
     "react-native-vector-icons": "^4.4.2",
@@ -44,6 +46,7 @@
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-form": "^7.1.1",
+    "redux-thunk": "^2.3.0",
     "validator": "^9.0.0"
   }
 }

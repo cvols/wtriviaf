@@ -1,16 +1,9 @@
-/**
- * @flow
- *
- * The EmailLogin component allows the user to login with an email address.
- */
+// The EmailLogin component allows the user to login with an email address.
 import React from 'react';
 import firebase from 'react-native-firebase';
 
 import EmailAuth from './EmailAuth';
 
-/**
- * Called when the user has successfully logged in.
- */
 const onSuccess = () => {
   // FirebaseAnalytics: Tell Analytics that a user has logged in by email address
   firebase.analytics().logEvent('login', {

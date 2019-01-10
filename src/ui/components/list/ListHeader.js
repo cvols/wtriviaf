@@ -1,20 +1,9 @@
-/**
- * @flow
- *
- * The ListHeader component can be used as a header in the list
- */
+// The ListHeader component can be used as a header in the list
 import React from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, Text, View } from 'react-native';
 
 import * as Theme from '../../../theme';
-
-/*
- * We use flow type to validate the Props of the component
- */
-type Props = {
-  // The text to display as the header
-  text: string,
-}
 
 const styles = StyleSheet.create({
   header: {
@@ -29,11 +18,17 @@ const styles = StyleSheet.create({
   },
 });
 
-export default (props: Props) => {
-  const { text } = props;
-  return (
-    <View style={styles.header}>
-      <Text style={styles.headerText}>{text}</Text>
-    </View>
-  );
-};
+export default class ListHeader extends React.Component {
+  static propTypes = {
+    text: PropTypes.string,
+  }
+
+  render() {
+    const { text } = this.props;
+    return (
+      <View style={styles.header}>
+        <Text style={styles.headerText}>{text}</Text>
+      </View>
+    )
+  }
+}

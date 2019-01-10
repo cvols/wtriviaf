@@ -1,8 +1,3 @@
-/**
- * @flow
- *
- * The Profile screen allows the user to view and manage all their linked accounts.
- */
 import React from 'react';
 import { Image, StyleSheet, Text } from 'react-native';
 import firebase from 'react-native-firebase';

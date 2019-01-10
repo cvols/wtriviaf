@@ -1,14 +1,8 @@
-/**
- * @flow
- *
- * The ChangeEmail screen allows the user to update their email address.
- */
+// The ChangeEmail screen allows the user to update their email address.
 import React from 'react';
+import PropTypes from 'prop-types';
 import firebase from 'react-native-firebase';
 import { Field, reduxForm, SubmissionError } from 'redux-form';
-
-import type { NavigationScreenProp } from 'react-navigation/src/TypeDefinition';
-import type { FormProps } from 'redux-form';
 
 import FormError from '../../../ui/components/form/FormError';
 import Screen from '../../../ui/components/Screen';
@@ -17,20 +11,18 @@ import TextField from '../../../ui/components/form/TextField';
 import { showMessage } from '../../../ui/components/Toast';
 import { isEmailValid, isPasswordValid } from '../../../util/validator';
 
-/*
- * We use flow type to validate the Props of the component
- */
-type Props = {
-  navigation: NavigationScreenProp<*, *>,
-} & FormProps;
-
-class ChangeEmail extends React.Component<Props> {
-  passwordInput: ?Field;
-
+class ChangeEmail extends React.Component {
   // Set the navigation options for `react-navigation`
   static navigationOptions = {
     headerTitle: 'Change email',
   };
+
+  static propTypes = {
+    error: PropTypes.string,
+    handleSubmit: PropTypes.func,
+    invalid: PropTypes.bool,
+    submitting: PropTypes.bool,
+  }
 
   render() {
     const {
@@ -77,18 +69,14 @@ class ChangeEmail extends React.Component<Props> {
     );
   }
 
-  /**
-   * Allows us to programatically focus the password input field
-   */
+  // Allows us to programatically focus the password input field
   focusPasswordInput = () => {
     // Redux Form exposes a `getRenderedComponent()` method to get the inner TextField
     if (this.passwordInput) this.passwordInput.getRenderedComponent().focus();
   }
 
-  /**
-   * Called when the user submits the form
-   */
-  onChangeEmail = async (values: Object) => {
+  // Called when the user submits the form
+  onChangeEmail = async values => {
     try {
       const { email, password } = values;
       const currentEmail = firebase.auth().currentUser.email;

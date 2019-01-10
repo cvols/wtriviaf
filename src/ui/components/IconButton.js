@@ -1,28 +1,40 @@
-/**
- * @flow
- *
- * The IconButton component acts as a simple button with just an Icon displayed
- */
 import React from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, TouchableOpacity } from 'react-native';
-
-import type { StyleObj } from 'react-native/Libraries/StyleSheet/StyleSheetTypes';
 
 import Icon from './Icon';
 
-/*
- * We use flow type to validate the Props of the component
- */
-type Props = {
-  // The optional style for the button container
-  containerStyle?: StyleObj,
-  // The icon to display
-  icon: string,
-  // The optional style for the button icon
-  iconStyle?: StyleObj,
-  // The action to call when the button is pressed
-  onPress: () => any,
-}
+export default class IconButton extends React.Component {
+  static propTypes = {
+    // The optional style for the button container
+    containerStyle: PropTypes.oneOfType([
+      PropTypes.object,
+      PropTypes.number,
+    ]),
+    // The icon to display
+    icon: PropTypes.string.isRequired,
+    // The optional style for the button icon
+    iconStyle: PropTypes.oneOfType([
+      PropTypes.object,
+      PropTypes.number,
+    ]),
+    // The action to call when the button is pressed
+    onPress: PropTypes.func.isRequired,
+  }
+
+  render() {
+    const { containerStyle, icon, iconStyle, onPress } = this.props;
+
+    return(
+      <TouchableOpacity
+        onPress={onPress}
+        style={[styles.container, containerStyle]}
+      >
+        <Icon active name={icon} style={[styles.icon, iconStyle]} />
+      </TouchableOpacity>
+    );
+  }
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -39,22 +51,3 @@ const styles = StyleSheet.create({
     lineHeight: 30,
   },
 });
-
-export default (props: Props) => {
-  const {
-    containerStyle,
-    icon,
-    iconStyle,
-    onPress,
-    ...restProps
-  } = props;
-
-  return (
-    <TouchableOpacity
-      onPress={onPress}
-      style={[styles.container, containerStyle]}
-      {...restProps}>
-      <Icon active name={icon} style={[styles.icon, iconStyle]} />
-    </TouchableOpacity>
-  );
-};

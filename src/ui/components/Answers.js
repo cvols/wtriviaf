@@ -1,149 +1,117 @@
-/**
- * @flow
- *
- * The Logged In Home screen is a simple screen indicating that the user has logged in.
- */
-import React from 'react'
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
+import React from 'react';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
-const getOverlayStyles = (isTrue, isFalse) => {
-    const s = [styles.answer]
+export default class Answers extends React.Component {
+  constructor(props) {
+    super(props);
 
-    if (isTrue) {
-        s.push(styles.answerCorrect)
-    } else if (isFalse) {
-        s.push(styles.answerWrong)
+    this.state = {
+      bgColor: null,
+    };
+  };
+
+  checkAnswer = (answer, i) => {
+    const { correctAnswer, isAnswered, increaseScore, clickButton, nextQuestion } = this.props;
+  
+    console.log('user answer: ', answer);
+    console.log('this.props.correctAnswer: ', correctAnswer);
+    console.log('this.props: ', this.props);
+    console.log('this.props.isAnswered: ', isAnswered);
+
+    let correct = false;
+
+    if (answer === correctAnswer) {
+      console.log('that is correct');
+
+      correct = true;
+
+      increaseScore();
     }
 
-    return s
-}
+    this.setState({
+      bgColor: {
+        index: i,
+        correct,
+      }
+    });
 
-export default class Answers extends React.Component<*> {
-    constructor(props){
-        super(props)
-        this.state = {
-            style: {
-                height: 30,
-                borderRadius: 15,
-                borderColor: 'black',
-                borderWidth: 1,
-                marginTop: 5,
-                justifyContent: 'center',
-                alignItems: 'center',
-                paddingHorizontal: 10,
-                backgroundColor: 'lightskyblue',
-            }
-        }
-    }
-    
-    checkAnswer = (answer, i) => {
-        console.log('answer: ', answer)
-        console.log('hhhhhhhhhhhhhhhhhhhhh: ', this.props.correct_answer)
+    clickButton();
 
-        if (!this.props.isAnswered) {
-            let isTrue = Boolean 
-            let isFalse = Boolean
+    setTimeout(() => {
+      this.setState({ 
+        bgColor: null,
+      });
+      nextQuestion();
+    }, 1000);
+  };
 
-            if (answer === this.props.correct_answer) {
-                isTrue = true
-                isFalse = false 
-                console.log('that is correct')
-                this.props.increaseScore()
-            } else {
-                isFalse = true
-                isTrue = false
-                console.log('that is wrong')
-            }
+  render() {
+    const { bgColor } = this.state;
+    const { incorrectAnswers } = this.props;
 
-            // this.getOverlayStyles(isTrue, isFalse, i)
-            getOverlayStyles(isTrue, isFalse, i)
+    return (
+      <View>
+        {incorrectAnswers.map((answer, i) => {
+          let style = styles.answer;
+          console.log('bgColor: ', {bgColor, i});
 
-            this.props.clickButton()
+          if (bgColor && bgColor.index === i) {
+            console.log('isTrue');
+            style = bgColor.correct ? styles.answerCorrect : styles.answerWrong;
+          }
 
-            setTimeout(() => {
-                this.props.nextQuestion()
-            }, 1000)
-        }
-    }
+          console.log('style: ', style);
 
-    getOverlayStyles(isTrue, isFalse, i) {
-        console.log('i: ', i)
-        
-            if (isTrue) {
-                this.setState({
-                    style: {
-                        height: 30,
-                        borderRadius: 15,
-                        borderColor: 'black',
-                        borderWidth: 1,
-                        marginTop: 5,
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        paddingHorizontal: 10,
-                        backgroundColor: 'green',
-                    }
-                })
-                console.log('HELLO ')
-            } else if (isFalse) {
-                this.setState({
-                    style: {
-                        height: 30,
-                        borderRadius: 15,
-                        borderColor: 'black',
-                        borderWidth: 1,
-                        marginTop: 5,
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        paddingHorizontal: 10,
-                        backgroundColor: 'red',
-                    }
-                })
-                console.log('GOODBYE ')
-            }
-        }
-
-
-
-    render() {
-        return (
-            <View>
-                <View>
-                    {this.props.incorrect_answers.map((answer, i) => {
-                        return (
-                            <TouchableOpacity key={answer} onPress={() => this.checkAnswer(answer, i)}>
-                                <View style={styles.container}>
-                                <View style={getOverlayStyles()}>
-                                        <Text key={i} style={styles.text}>{decodeURIComponent(answer)}</Text>
-                                    </View>
-                                </View>
-                            </TouchableOpacity>
-                        )
-                    })}
+          return (
+            <TouchableOpacity key={answer} onPress={() => this.checkAnswer(answer, i)}>
+              <View style={styles.container}>
+                <View style={style}>
+                  <Text key={i} style={styles.text}>{decodeURIComponent(answer)}</Text>
                 </View>
-            </View>
-        )
-    }
-}
+              </View>
+            </TouchableOpacity>
+          )
+        })}
+      </View>
+    )
+  }
+};
 
 const styles = StyleSheet.create({
-    container: {
-        paddingHorizontal: 10,
-    },
-    answer: {
-        height: 30,
-        borderRadius: 15,
-        borderColor: 'black',
-        borderWidth: 1,
-        marginTop: 5,
-        justifyContent: 'center',
-        alignItems: 'center',
-        paddingHorizontal: 10,
-        backgroundColor: 'lightskyblue',
-    },
-    answerCorrect: {
-        backgroundColor: 'green',
-    },
-    answerWrong: {
-        backgroundColor: 'red',
-    },
-})
+  container: {
+    paddingHorizontal: 10,
+  },
+  answer: {
+    height: 30,
+    borderRadius: 15,
+    borderColor: 'black',
+    borderWidth: 1,
+    marginTop: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 10,
+    backgroundColor: 'orange',
+  },
+  answerCorrect: {
+    height: 30,
+    borderRadius: 15,
+    borderColor: 'black',
+    borderWidth: 1,
+    marginTop: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 10,
+    backgroundColor: 'green',
+  },
+  answerWrong: {
+    height: 30,
+    borderRadius: 15,
+    borderColor: 'black',
+    borderWidth: 1,
+    marginTop: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 10,
+    backgroundColor: 'red',
+  },
+});

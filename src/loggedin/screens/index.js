@@ -26,7 +26,8 @@ import CreateLeague from './CreateLeague';
 import InviteFriends from './InviteFriends';
 import FindLeague from './FindLeague';
 import PlayNow from './PlayNow';
-
+// import InviteModal from '../../ui/components/InviteModal'
+import Duel from './Duel'
 
 type TabBarIcon = {
   tintColor: string,
@@ -45,7 +46,13 @@ const styles = StyleSheet.create({
  * Find out more: https://reactnavigation.org/docs/navigators/stack
  */
 const HomeStack = StackNavigator({
-  LoggedInHome: { screen: LoggedInHome },
+  LoggedInHome: { 
+    screen: LoggedInHome,
+    navigationOptions: ({ navigation }) => ({
+      headerLeft: null,
+      title: 'Home',
+    })
+  },
   CreateLeague: {
     screen: CreateLeague,
     navigationOptions: ({ navigation }) => ({
@@ -56,7 +63,7 @@ const HomeStack = StackNavigator({
   InviteFriends: {
     screen: InviteFriends,
     navigationOptions: ({ navigation }) => ({
-      tabBarVisible: false,
+      headerLeft: null,
       title: 'Invite Friends',
     }),
   },
@@ -75,6 +82,14 @@ const HomeStack = StackNavigator({
       headerLeft: null,
     }),
   },
+  Duel: {
+    screen: Duel,
+    navigationOptions: ({ navigation }) => ({
+      tabBarVisible: false,
+      title: 'Duel',
+      headerLeft: null,
+    })
+  }
 }, {
   // Explicitly set the default screen to use
   initialRouteName: 'LoggedInHome',

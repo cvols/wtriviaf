@@ -1,11 +1,7 @@
-/**
- * @flow
- *
- * This file configures the core colours used within the app.  Simply change the values here and
- * the application will be updated throughout.
- */
+// This file configures the core colours used within the app.  
+// Simply change the values here and the application will be updated throughout.
 
-export const PRIMARY = '#e88634';
+export const PRIMARY = '#0E6463';
 
 export const BORDER_COLOR = '#ccc';
 export const BORDER_COLOR_DARK = '#999';

@@ -1,17 +1,7 @@
-/**
- * @flow
- *
- * The Tabs component acts as a wrapper around `Tab` components
- */
-import React, { type Node } from 'react';
+// The Tabs component acts as a wrapper around `Tab` components
+import React from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, View } from 'react-native';
-
-/*
- * We use flow type to validate the Props of the component
- */
-type Props = {
-  children: Node,
-}
 
 const styles = StyleSheet.create({
   container: {
@@ -20,8 +10,18 @@ const styles = StyleSheet.create({
   },
 });
 
-export default (props: Props) => (
-  <View style={styles.container}>
-    {props.children}
-  </View>
-);
+export default class Tabs extends React.Component {
+  static propTypes = {
+    children: PropTypes.node,
+  }
+
+  render() {
+    const { children } = this.props;
+
+    return (
+      <View style={styles.container}>
+        {children}
+      </View>
+    )
+  }
+}

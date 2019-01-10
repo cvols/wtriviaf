@@ -1,23 +1,11 @@
-/**
- * @flow
- *
- * Manages the state of all UI components which rely on Redux
- * This is currently limited to the LoadingModal.
- */
-
-type UiAction = {
-  type: 'ui/loading/hide' | 'ui/loading/show',
-}
-
-type UiReduxState = {
-  loading: boolean,
-}
+// Manages the state of all UI components which rely on Redux
+// This is currently limited to the LoadingModal.
 
 const initialState = {
   loading: false,
 };
 
-export default (state: UiReduxState = initialState, action: UiAction): UiReduxState => {
+export default (state = initialState, action) => {
   switch (action.type) {
     case 'ui/loading/hide':
       return {
@@ -36,7 +24,7 @@ export default (state: UiReduxState = initialState, action: UiAction): UiReduxSt
   }
 };
 
-const isLoading = (state: { ui: UiReduxState }) => state.ui.loading;
+const isLoading = state => state.ui.loading;
 
 export const Store = ({
   isLoading,

@@ -1,23 +1,10 @@
-/**
- * @flow
- *
- * The TextField component displays a text field
- */
+// The TextField component displays a text field
 import React from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, TextInput, View } from 'react-native';
-import type { FieldProps } from 'redux-form';
 
 import Icon from '../Icon';
 import * as Theme from '../../../theme';
-
-/*
- * We use flow type to validate the Props of the component
- */
-type Props = {
-  // The icon to display as part of the text field
-  icon: string,
-// The props inherit from the built in `redux-form` FieldProps
-} & FieldProps;
 
 const styles = StyleSheet.create({
   container: {
@@ -51,8 +38,12 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class TextField extends React.Component<Props> {
-  input: TextInput | null;
+export default class TextField extends React.Component {
+  static propTypes = {
+    // The icon to display as part of the text field
+    icon: PropTypes.string,
+    // The props inherit from the built in `redux-form` FieldProps
+  }
 
   render() {
     const {
@@ -83,9 +74,7 @@ export default class TextField extends React.Component<Props> {
     );
   }
 
-  /*
-   * Expose a focus method to allow parent Components to focus the text field programmatically
-   */
+// Expose a focus method to allow parent Components to focus the text field programmatically
   focus = () => {
     if (this.input) this.input.focus();
   }

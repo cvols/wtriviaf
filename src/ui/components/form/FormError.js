@@ -1,20 +1,9 @@
-/**
- * @flow
- *
- * The FormError component displays errors from `redux-form`
- */
+/// The FormError component displays errors from `redux-form`
 import React from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, Text, View } from 'react-native';
 
 import * as Theme from '../../../theme';
-
-/*
- * We use flow type to validate the Props of the component
- */
-type Props = {
-  // An optional error object from `redux-form`
-  error?: Object,
-}
 
 const styles = StyleSheet.create({
   error: {
@@ -28,8 +17,25 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ({ error }: Props) => (error ? (
-  <Text style={styles.error}>{error.message}</Text>
-) : (
-  <View style={styles.spacer} />
-));
+export default class FormError extends React.Component {
+  static propTypes = {
+    error: PropTypes.shape({
+      message: PropTypes.string,
+    }),
+  }
+
+  render() {
+    const { error } = this.props;
+    
+    return (
+      <View>
+        {error ?
+          <Text style={styles.error}>{error.message}</Text>
+          :
+          <View style={styles.spacer} />
+        }
+      </View>
+    )
+  }
+}
+

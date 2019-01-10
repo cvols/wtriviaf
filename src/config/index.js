@@ -1,8 +1,4 @@
-/**
- * @flow
- *
- * This file provides configuration constants for use in the application
- */
+// This file provides configuration constants for use in the application
 
 // You can find this value in the `android/app/google-service.json` file
 // Look for the `client_id` value, which ends in `apps.googleusercontent.com`

@@ -1,20 +1,9 @@
-/**
- * @flow
- *
- * The List component wraps a list of components
- */
-import React, { type Node } from 'react';
+// The List component wraps a list of components
+import React from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, View } from 'react-native';
 
 import * as Theme from '../../../theme';
-
-/*
- * We use flow type to validate the Props of the component
- */
-type Props = {
-  // The children to display in the List component
-  children: Node,
-}
 
 const styles = StyleSheet.create({
   container: {
@@ -26,8 +15,18 @@ const styles = StyleSheet.create({
   },
 });
 
-export default (props: Props) => (
-  <View style={styles.container}>
-    {props.children}
-  </View>
-);
+export default class List extends React.Component {
+  static propTypes = {
+    children: PropTypes.node,
+  }
+
+  render() {
+    const { children } = this.props;
+
+    return (
+      <View style={styles.container}>
+        {children}
+      </View>
+    )
+  }
+}

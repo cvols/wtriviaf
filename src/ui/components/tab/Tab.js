@@ -1,27 +1,10 @@
-/**
- * @flow
- *
- * The Tab component displays a tab button
- */
+// The Tab component displays a tab button
 import React from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 import Icon from '../Icon';
 import * as Theme from '../../../theme';
-
-/*
- * We use flow type to validate the Props of the component
- */
-type Props = {
-  // Whether the tab is currently active / selected
-  active: boolean;
-  // The text to display within the tab
-  heading: string;
-  // The icon to display within the tab
-  icon: string;
-  // The action to call when the tab is pressed
-  onPress: () => any;
-}
 
 const styles = StyleSheet.create({
   container: {
@@ -53,20 +36,29 @@ const styles = StyleSheet.create({
   },
 });
 
-export default (props: Props) => {
-  const {
-    active,
-    heading,
-    icon,
-    onPress,
-  } = props;
+export default class Tab extends React.Component {
+  static propTypes = {
+    // Whether the tab is currently active / selected
+    active: PropTypes.bool,
+    // The text to display within the tab
+    heading: PropTypes.string,
+    // The icon to display within the tab
+    icon: PropTypes.string,
+    // The action to call when the tab is pressed
+    onPress: PropTypes.func
+  }
 
-  return (
-    <TouchableOpacity
-      onPress={onPress}
-      style={[styles.container, active && styles.containerActive]}>
-      <Icon name={icon} style={[styles.icon, active && styles.iconActive]} />
-      <Text style={[styles.text, active && styles.textActive]}>{heading}</Text>
-    </TouchableOpacity>
-  );
-};
+  render() {
+    const { active, heading, icon, onPress } = this.props;
+
+    return (
+      <TouchableOpacity
+        onPress={onPress}
+        style={[styles.container, active && styles.containerActive]}
+      >
+        <Icon name={icon} style={[styles.icon, active && styles.iconActive]} />
+        <Text style={[styles.text, active && styles.textActive]}>{heading}</Text>
+      </TouchableOpacity>
+    )
+  }
+}

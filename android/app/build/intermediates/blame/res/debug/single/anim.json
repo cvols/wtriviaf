@@ -4,6 +4,10 @@
         "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
         "merged": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
         "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_slide_in_top.xml"
     },
@@ -12,28 +16,16 @@
         "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/anim/catalyst_fade_in.xml"
     },
     {
-        "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/catalyst_fade_out.xml",
-        "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/anim/catalyst_fade_out.xml"
-    },
-    {
-        "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
-        "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_slide_in_top.xml"
-    },
-    {
         "merged": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_in.xml",
         "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/anim/catalyst_push_up_in.xml"
     },
     {
-        "merged": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/tooltip_exit.xml",
-        "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/tooltip_exit.xml"
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_slide_in_top.xml"
     },
     {
-        "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
-        "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_fade_in.xml"
-    },
-    {
-        "merged": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
-        "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_slide_out_bottom.xml"
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_fade_out.xml"
     },
     {
         "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
@@ -60,10 +52,6 @@
         "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/tooltip_exit.xml"
     },
     {
-        "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/catalyst_fade_in.xml",
-        "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/anim/catalyst_fade_in.xml"
-    },
-    {
         "merged": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_out.xml",
         "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/anim/catalyst_push_up_out.xml"
     },
@@ -72,20 +60,24 @@
         "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_slide_in_bottom.xml"
     },
     {
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
         "merged": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
         "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_slide_in_bottom.xml"
     },
     {
-        "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
-        "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_popup_enter.xml"
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/catalyst_fade_out.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/anim/catalyst_fade_out.xml"
     },
     {
-        "merged": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
-        "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_slide_out_top.xml"
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_popup_enter.xml"
     },
     {
-        "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
-        "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_fade_out.xml"
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/catalyst_slide_down.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/anim/catalyst_slide_down.xml"
     },
     {
         "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
@@ -108,20 +100,12 @@
         "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/catalyst_slide_up.xml",
-        "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/anim/catalyst_slide_up.xml"
-    },
-    {
         "merged": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
         "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_fade_in.xml"
     },
     {
         "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
         "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_slide_out_bottom.xml"
-    },
-    {
-        "merged": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/tooltip_enter.xml",
-        "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/tooltip_enter.xml"
     },
     {
         "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/tooltip_enter.xml",
@@ -132,12 +116,100 @@
         "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_popup_enter.xml"
     },
     {
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/catalyst_slide_up.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/anim/catalyst_slide_up.xml"
+    },
+    {
         "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
         "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
         "merged": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/catalyst_fade_out.xml",
         "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/anim/catalyst_fade_out.xml"
+    },
+    {
+        "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/catalyst_fade_out.xml",
+        "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/anim/catalyst_fade_out.xml"
+    },
+    {
+        "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_out.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/anim/catalyst_push_up_out.xml"
+    },
+    {
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_in.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/anim/catalyst_push_up_in.xml"
+    },
+    {
+        "merged": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/tooltip_exit.xml",
+        "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/tooltip_exit.xml"
+    },
+    {
+        "merged": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/catalyst_fade_in.xml",
+        "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/anim/catalyst_fade_in.xml"
+    },
+    {
+        "merged": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/catalyst_slide_up.xml",
+        "source": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/anim/catalyst_slide_up.xml"
+    },
+    {
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/catalyst_fade_in.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/anim/catalyst_fade_in.xml"
+    },
+    {
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/tooltip_enter.xml",
+        "source": "/Users/christophervolonnino/Desktop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/tooltip_enter.xml"
+    },
+    {
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/tooltip_enter.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/tooltip_enter.xml"
+    },
+    {
+        "merged": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/tooltip_exit.xml",
+        "source": "/Users/christophervolonnino/Desktop/laptop/projects/wtriviaf/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/anim/tooltip_exit.xml"
     },
     {
         "merged": "/Users/zob/Desktop/wtriviaf/android/app/build/intermediates/res/merged/debug/anim/catalyst_slide_down.xml",

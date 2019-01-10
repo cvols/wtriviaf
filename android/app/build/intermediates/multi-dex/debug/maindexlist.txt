@@ -26,8 +26,8 @@ javax/annotation/meta/TypeQualifierValidator.class
 com/facebook/react/animated/AnimatedNode.class
 com/facebook/react/modules/statusbar/StatusBarModule.class
 com/facebook/react/modules/storage/AsyncStorageModule.class
-com/facebook/react/bridge/BaseActivityEventListener.class
 com/facebook/share/internal/LikeActionController$CreationCallback.class
+com/facebook/react/bridge/BaseActivityEventListener.class
 android/support/multidex/MultiDexExtractor.class
 android/support/v4/media/MediaBrowserCompat$Subscription.class
 android/support/v4/app/NotificationCompatBase$UnreadConversation.class
@@ -40,8 +40,8 @@ com/facebook/appevents/AppEventsConstants.class
 javax/annotation/Nonnull.class
 android/support/v4/widget/CircularProgressDrawable$Ring.class
 com/google/android/gms/internal/zzfmp.class
-com/google/android/gms/common/api/internal/zzm.class
 com/facebook/share/model/ShareLinkContent$Builder.class
+com/google/android/gms/common/api/internal/zzm.class
 android/support/v4/view/ViewCompat$ViewCompatApi24Impl.class
 com/facebook/react/views/checkbox/ReactCheckBoxManager.class
 android/support/customtabs/CustomTabsSession.class
@@ -53,8 +53,8 @@ com/facebook/react/devsupport/DebugOverlayController.class
 io/invertase/firebase/crash/RNFirebaseCrash.class
 android/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21.class
 android/support/v4/app/NotificationCompat$Style.class
-com/facebook/react/uimanager/BaseViewManager.class
 android/support/v4/app/ActionBarDrawerToggle.class
+com/facebook/react/uimanager/BaseViewManager.class
 android/support/v4/media/MediaBrowserCompat$ConnectionCallback.class
 android/support/v4/app/DialogFragment$DialogStyle.class
 com/google/android/gms/common/SignInButton$ColorScheme.class
@@ -63,8 +63,8 @@ android/support/v4/app/FragmentActivity.class
 com/facebook/imagepipeline/producers/MultiplexProducer$Multiplexer.class
 android/support/v4/media/session/MediaSessionCompat$1.class
 com/facebook/react/flat/DrawImageWithDrawee.class
-com/facebook/common/media/MediaUtils.class
 android/support/v4/app/FragmentTabHost.class
+com/facebook/common/media/MediaUtils.class
 com/google/android/gms/auth/account/WorkAccountApi.class
 com/facebook/imagepipeline/common/RotationOptions$RotationAngle.class
 android/support/customtabs/ICustomTabsService.class
@@ -106,9 +106,9 @@ com/facebook/infer/annotation/OkToExtend.class
 com/facebook/react/modules/dialog/AlertFragment.class
 com/facebook/imagepipeline/cache/MediaVariationsIndexDatabase$LazyIndexDbOpenHelper.class
 com/facebook/reactnative/androidsdk/FBLoginButtonManager.class
-com/facebook/react/bridge/DynamicFromArray.class
 com/facebook/share/model/AppInviteContent$Builder$Destination.class
 com/facebook/share/widget/JoinAppGroupDialog.class
+com/facebook/react/bridge/DynamicFromArray.class
 com/facebook/reactnative/androidsdk/FBAppEventsLoggerModule.class
 com/facebook/react/modules/core/DeviceEventManagerModule.class
 android/support/annotation/RequiresPermission$Read.class
@@ -133,8 +133,8 @@ com/facebook/common/util/HashCodeUtil.class
 com/facebook/imagepipeline/datasource/CloseableProducerToDataSourceAdapter.class
 android/support/v4/media/MediaBrowserServiceCompat$BrowserRoot.class
 android/support/v4/media/MediaMetadataCompat$TextKey.class
-com/facebook/react/views/text/TextInlineImageSpan.class
 com/google/android/gms/internal/zzfoc.class
+com/facebook/react/views/text/TextInlineImageSpan.class
 android/support/v4/media/VolumeProviderCompatApi21$Delegate.class
 android/support/annotation/Keep.class
 android/support/annotation/BinderThread.class
@@ -274,8 +274,8 @@ com/facebook/react/flat/AbstractDrawBorder.class
 android/support/v7/appcompat/R$layout.class
 com/facebook/infer/annotation/SuppressNullFieldAccess.class
 android/support/v4/media/MediaBrowserCompat$MediaItem$1.class
-com/facebook/react/flat/DrawCommandManager.class
 android/support/v4/content/WakefulBroadcastReceiver.class
+com/facebook/react/flat/DrawCommandManager.class
 com/facebook/share/model/ShareMedia$Builder.class
 com/facebook/jni/MapIteratorHelper.class
 android/support/v4/widget/SimpleCursorAdapter.class
@@ -333,8 +333,8 @@ com/facebook/react/flat/RCTVirtualText.class
 android/support/compat/R$styleable.class
 com/facebook/react/devsupport/InspectorPackagerConnection$Connection.class
 android/support/v4/media/MediaMetadataCompat$1.class
-com/facebook/react/bridge/ModuleSpec$ConstructorProvider.class
 com/facebook/share/internal/LikeBoxCountView.class
+com/facebook/react/bridge/ModuleSpec$ConstructorProvider.class
 com/facebook/react/modules/timepicker/SupportTimePickerDialogFragment.class
 android/support/v7/app/AlertDialog$Builder.class
 com/google/android/gms/auth/api/Auth$AuthCredentialsOptions.class
@@ -392,8 +392,8 @@ com/facebook/react/common/ShakeDetector.class
 android/support/v4/media/session/PlaybackStateCompat$MediaKeyAction.class
 com/facebook/react/devsupport/BundleDownloader.class
 android/support/v4/media/AudioAttributesCompat$1.class
-com/google/android/gms/common/data/DataBuffer.class
 com/facebook/cache/disk/DynamicDefaultDiskStorage$State.class
+com/google/android/gms/common/data/DataBuffer.class
 com/facebook/react/flat/RCTImageView.class
 android/support/v4/text/util/LinkifyCompat$LinkifyMask.class
 android/arch/lifecycle/Lifecycle$State.class
@@ -410,8 +410,8 @@ com/facebook/react/flat/RCTImageViewManager.class
 io/invertase/firebase/admob/RNFirebaseAdMobNativeExpress.class
 android/support/annotation/StyleRes.class
 com/facebook/imagepipeline/common/ImageDecodeOptionsBuilder.class
-com/facebook/react/modules/vibration/VibrationModule.class
 com/google/android/gms/internal/zzfnz.class
+com/facebook/react/modules/vibration/VibrationModule.class
 android/support/annotation/XmlRes.class
 android/support/v4/widget/TextViewCompat$TextViewCompatApi26Impl.class
 com/facebook/react/devsupport/JSDebuggerWebSocketClient.class
@@ -438,8 +438,8 @@ android/support/v4/widget/TextViewCompat$TextViewCompatApi23Impl.class
 com/facebook/reactnative/androidsdk/FBGameRequestDialogModule.class
 io/invertase/firebase/admob/RNFirebaseAdMob.class
 com/facebook/react/views/text/CustomStyleSpan.class
-com/facebook/react/modules/appstate/AppStateModule.class
 android/support/v4/widget/ResourceCursorAdapter.class
+com/facebook/react/modules/appstate/AppStateModule.class
 io/invertase/firebase/analytics/RNFirebaseAnalytics.class
 com/facebook/react/ReactActivityDelegate.class
 android/support/v4/view/ViewPager$2.class
@@ -461,8 +461,8 @@ com/facebook/infer/annotation/Verify.class
 com/facebook/react/views/picker/ReactPickerManager$ReactPickerAdapter.class
 com/google/android/gms/auth/api/credentials/CredentialRequest.class
 com/facebook/react/views/modal/ReactModalHostView.class
-com/facebook/react/modules/network/OkHttpClientProvider.class
 okio/Segment.class
+com/facebook/react/modules/network/OkHttpClientProvider.class
 com/facebook/react/modules/blob/BlobModule.class
 com/facebook/cache/disk/DefaultDiskStorage$FileInfo.class
 android/support/v4/net/ConnectivityManagerCompat$ConnectivityManagerCompatImpl.class
@@ -483,8 +483,8 @@ javax/annotation/Nonnegative.class
 javax/annotation/WillClose.class
 com/facebook/infer/annotation/IntegritySource.class
 com/google/android/gms/common/internal/zzby.class
-com/facebook/react/devsupport/WebsocketJavaScriptExecutor.class
 com/google/android/gms/common/internal/zzbv.class
+com/facebook/react/devsupport/WebsocketJavaScriptExecutor.class
 javax/annotation/Detainted.class
 com/facebook/common/internal/VisibleForTesting.class
 com/facebook/drawee/backends/pipeline/PipelineDraweeController.class
@@ -655,8 +655,8 @@ com/facebook/infer/annotation/ThreadSafe.class
 android/support/v4/app/ActionBarDrawerToggle$Delegate.class
 android/support/v4/app/NotificationCompatExtras.class
 android/support/v4/widget/TextViewCompat$TextViewCompatApi18Impl.class
-com/facebook/react/views/webview/ReactWebViewManager$ReactWebView.class
 com/facebook/imagepipeline/common/ImageDecodeOptions.class
+com/facebook/react/views/webview/ReactWebViewManager$ReactWebView.class
 com/facebook/imageformat/ImageFormat.class
 android/support/annotation/TransitionRes.class
 android/support/v4/app/NotificationCompat$NotificationCompatBaseImpl$BuilderBase.class
@@ -677,8 +677,8 @@ com/facebook/imageutils/WebpUtil.class
 com/google/android/gms/common/api/internal/zzde.class
 com/facebook/appevents/AppEventsLogger.class
 javax/annotation/OverridingMethodsMustInvokeSuper.class
-com/facebook/react/views/progressbar/ProgressBarShadowNode.class
 com/facebook/imagepipeline/cache/CountingMemoryCache.class
+com/facebook/react/views/progressbar/ProgressBarShadowNode.class
 com/facebook/imagepipeline/request/MediaVariations.class
 android/support/v4/media/VolumeProviderCompat$ControlType.class
 com/facebook/react/views/text/ReactTextViewManager.class
@@ -716,10 +716,10 @@ com/facebook/imagepipeline/request/MediaVariations$1.class
 com/facebook/react/devsupport/RedBoxDialog.class
 com/facebook/share/internal/LikeStatusClient.class
 com/google/android/gms/auth/api/credentials/zzb.class
-com/facebook/drawee/drawable/RoundedBitmapDrawable.class
 com/facebook/imagepipeline/datasource/ListDataSource.class
-com/google/android/gms/auth/api/Auth$AuthCredentialsOptions$Builder.class
+com/facebook/drawee/drawable/RoundedBitmapDrawable.class
 com/facebook/react/bridge/ReactContext.class
+com/google/android/gms/auth/api/Auth$AuthCredentialsOptions$Builder.class
 com/facebook/FacebookSdk.class
 com/facebook/react/bridge/DynamicFromMap.class
 android/support/v7/graphics/drawable/DrawerArrowDrawable$ArrowDirection.class
@@ -796,8 +796,8 @@ com/facebook/drawee/backends/pipeline/DrawableFactory.class
 android/support/v4/app/AppOpsManagerCompat.class
 com/facebook/infer/annotation/SuppressFieldNotNullable.class
 android/support/v7/app/NotificationCompat$DecoratedCustomViewStyle.class
-com/google/android/gms/auth/zzd.class
 com/facebook/imagepipeline/postprocessors/IterativeBoxBlurPostProcessor.class
+com/google/android/gms/auth/zzd.class
 android/support/v4/app/NotificationCompatApi26.class
 com/facebook/react/views/text/frescosupport/FrescoBasedReactTextInlineImageViewManager.class
 com/google/android/gms/common/api/ApiException.class
@@ -831,8 +831,8 @@ android/support/v7/widget/MenuItemHoverListener.class
 android/support/v4/view/ViewCompat$FocusRealDirection.class
 android/support/v4/text/util/LinkifyCompat$LinkSpec.class
 com/facebook/infer/annotation/SuppressViewNullability.class
-com/google/android/gms/auth/api/accounttransfer/AccountTransfer.class
 android/support/v4/provider/FontsContractCompat$FontFamilyResult$FontResultStatus.class
+com/google/android/gms/auth/api/accounttransfer/AccountTransfer.class
 com/facebook/common/internal/DoNotStrip.class
 com/facebook/react/views/scroll/ReactScrollViewManager.class
 android/support/v4/view/ViewPager$PagerObserver.class
@@ -923,8 +923,8 @@ android/support/v4/view/ViewCompat$FocusRelativeDirection.class
 com/facebook/imagepipeline/common/ResizeOptions.class
 android/support/v4/internal/view/SupportMenuItem.class
 com/facebook/imagepipeline/core/ImagePipeline.class
-com/facebook/react/views/text/ReactRawTextManager.class
 android/support/v4/os/BuildCompat.class
+com/facebook/react/views/text/ReactRawTextManager.class
 com/facebook/imagepipeline/request/BasePostprocessor.class
 com/facebook/react/modules/core/Timing.class
 com/facebook/react/touch/JSResponderHandler.class
@@ -957,11 +957,11 @@ com/facebook/react/devsupport/RedBoxHandler.class
 com/google/firebase/database/PropertyName.class
 com/google/android/gms/internal/zzbfq.class
 android/support/v4/app/NotificationBuilderWithActions.class
-com/facebook/react/modules/clipboard/ClipboardModule.class
 com/facebook/share/widget/AppInviteDialog.class
+com/facebook/react/modules/clipboard/ClipboardModule.class
 com/facebook/react/modules/debug/FpsDebugFrameCallback.class
-com/facebook/react/modules/fresco/FrescoModule.class
 com/facebook/share/model/ShareMedia.class
+com/facebook/react/modules/fresco/FrescoModule.class
 com/facebook/react/flat/RCTTextInput.class
 android/support/v7/appcompat/R$dimen.class
 android/support/v4/app/FragmentManager.class

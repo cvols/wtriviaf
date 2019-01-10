@@ -1,8 +1,3 @@
-/**
- * @flow
- *
- * The Logged In Home screen is a simple screen indicating that the user has logged in.
- */
 import React, { Component } from 'react'
 import { View, Text, StyleSheet, ActivityIndicator } from 'react-native'
 
@@ -14,159 +9,161 @@ import Answers from '../../ui/components/Answers'
 
 import API from '../../util/API'
 
-export default class PlayNow extends Component<*> {
-    constructor(props) {
-        super(props)
-        this.state = {
-            nr: 0,
-            questionAnswered: false,
-            questions: [],
-            question: '',
-            correct_answer: [],
-            incorrect_answers: [],
-            gameOver: false,
-            category: [],
-            score: 0,
-            total: 0,
-        }
-        this.nextQuestion = this.nextQuestion.bind(this)
-        this.handleClickButton = this.handleClickButton.bind(this)
-        this.handleIncreaseScore = this.handleIncreaseScore.bind(this)
-        this.handleClickButton = this.handleClickButton.bind(this)
-        this.shuffle = this.shuffle.bind(this)
-    }
+export default class PlayNow extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      nr: 0,
+      isAnswered: false,
+      questions: [],
+      question: '',
+      correctAnswer: [],
+      incorrectAnswers: [],
+      gameOver: false,
+      category: [],
+      score: 0,
+      total: 0,
+    };
+    this.nextQuestion = this.nextQuestion.bind(this);
+    this.handleClickButton = this.handleClickButton.bind(this);
+    this.increaseScore = this.increaseScore.bind(this);
+    this.shuffle = this.shuffle.bind(this);
+  }
 
-    componentWillMount() {
-        API.playNow()
-            .then((res) => {
-                let { nr } = this.state
+  componentWillMount() {
+    API.playNow()
+      .then((res) => {
+        let { nr } = this.state;
 
-                this.setState({
-                    questions: res.results,
-                    question: res.results[nr].question,
-                    correct_answer: res.results[nr].correct_answer,
-                    incorrect_answers: [res.results[nr].correct_answer, res.results[nr].incorrect_answers[0], res.results[nr].incorrect_answers[1], res.results[nr].incorrect_answers[2]],
-                    total: res.results.length,
-                    category: res.results[nr].category,
-                    nr: this.state.nr + 1,
-                })
-                console.log('this.state.questions: ', this.state.questions)
-                console.log('correct_answer: ', this.state.correct_answer)
-                this.shuffle()
-            })
-            .catch((err) => console.log('catch: ', err))
-    }
-
-    shuffle() {
-        console.log('first: ', this.state.incorrect_answers)
-
-        const array = this.state.incorrect_answers
-
-        function shuffle(array) {
-            var currentIndex = array.length, temporaryValue, randomIndex
-          
-            // While there remain elements to shuffle...
-            while (0 !== currentIndex) {
-          
-              // Pick a remaining element...
-              randomIndex = Math.floor(Math.random() * currentIndex)
-              currentIndex -= 1
-          
-              // And swap it with the current element.
-              temporaryValue = array[currentIndex]
-              array[currentIndex] = array[randomIndex]
-              array[randomIndex] = temporaryValue
-            }
-          
-            return array
-          }
-          
-          shuffle(array)
-
-          this.setState({
-              incorrect_answers: array
-          })
-
-          console.log('state: ', this.state.incorrect_answers)
-    }
-
-    nextQuestion() {
-        if (this.state.nr === this.state.total) {
-            this.setState({ gameOver: true, })
-        } else {
-            this.pushData(this.state.nr)
-            this.setState({
-                questionAnswered: false,
-            })
-            this.shuffle()
-        }
-    }
-
-    pushData(nr) {
         this.setState({
-            question: this.state.questions[nr].question,
-            incorrect_answers: [this.state.questions[nr].correct_answer, this.state.questions[nr].incorrect_answers[0], this.state.questions[nr].incorrect_answers[1], this.state.questions[nr].incorrect_answers[2]],
-            correct_answer: this.state.questions[nr].correct_answer,
-            category: this.state.questions[nr].category,
-            nr: this.state.nr + 1,
-        })
+          questions: res.results,
+          question: res.results[nr].question,
+          correctAnswer: res.results[nr].correct_answer,
+          incorrectAnswers: [res.results[nr].correct_answer, res.results[nr].incorrect_answers[0], res.results[nr].incorrect_answers[1], res.results[nr].incorrect_answers[2]],
+          total: res.results.length,
+          category: res.results[nr].category,
+          nr: nr + 1,
+        });
+        console.log('this.state.questions: ', this.state.questions);
+        console.log('correctAnswer: ', this.state.correctAnswer);
+        this.shuffle();
+      })
+      .catch((err) => console.log('catch: ', err));
+  }
+
+  shuffle() {
+    const { incorrectAnswers } = this.state;
+    const array = incorrectAnswers;
+
+    function shuffle(array) {
+      let currentIndex = array.length, temporaryValue, randomIndex;
+
+      // While there remain elements to shuffle...
+      while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex)
+        currentIndex -= 1
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex]
+        array[currentIndex] = array[randomIndex]
+        array[randomIndex] = temporaryValue
+      }
+
+      return array;
     }
 
-    handleClickButton() {
-        this.setState({
-            questionAnswered: true,
-        })
-    }
+    shuffle(array);
 
-    handleIncreaseScore() {
-        this.setState({
-            score: this.state.score + 1,
-        })
-    }
+    this.setState({
+      incorrectAnswers: array
+    });
+  }
 
-    goBack = () => this.props.navigation.goBack()
+  nextQuestion() {
+    const { nr, total } = this.state;
 
-    gameStart = () => {
-        return (
-            <View>
-                { this.state.questions ? 
-                <View>
-                    <Question
-                        category={this.state.category}
-                        nr={this.state.nr}
-                        total={this.state.total}
-                        question={this.state.question}
-                    />
-                    <Answers
-                        incorrect_answers={this.state.incorrect_answers}
-                        correct_answer={this.state.correct_answer}
-                        nextQuestion={this.nextQuestion}
-                        isAnswered={this.state.questionAnswered}
-                        increaseScore={this.handleIncreaseScore}
-                        clickButton={this.handleClickButton}
-                        shuffle={this.shuffle}
-                    />
-                </View> 
-                : <Spinner size="large" /> }
-            </View>
-        )
+    if (nr === total) {
+      this.setState({ gameOver: true, });
+    } else {
+      this.pushData(nr);
+      this.setState({ isAnswered: false });
+      this.shuffle();
     }
+  }
 
-    gameOver = () => {
-        return (
-            <View>
-                <Text>Game Over</Text>
-                <Text>You got {this.state.score} of {this.state.total} questions right!</Text>
-                <Button text="Go Home" onPress={this.goBack} />
-            </View>
-        )
-    }
+  pushData(nr) {
+    this.setState({
+      question: this.state.questions[nr].question,
+      incorrectAnswers: [this.state.questions[nr].correct_answer, this.state.questions[nr].incorrect_answers[0], this.state.questions[nr].incorrect_answers[1], this.state.questions[nr].incorrect_answers[2]],
+      correctAnswer: this.state.questions[nr].correct_answer,
+      category: this.state.questions[nr].category,
+      nr: this.state.nr + 1,
+    });
+  }
 
-    render() {
-        return (
-            <Screen>
-                { this.state.gameOver ? this.gameOver() : this.gameStart() }
-            </Screen>
-        )
-    }
+  handleClickButton() {
+    this.setState({ isAnswered: true });
+  }
+
+  increaseScore() {
+    const { score } = this.state;
+
+    this.setState({
+      score: score + 1,
+    });
+  }
+
+  goBack = () => this.props.navigation.goBack();
+
+  gameStart() {
+    const { questions, category, nr, total, question, incorrectAnswers, correctAnswer, isAnswered } = this.state;
+
+    return (
+      <View>
+        {questions ?
+          <View>
+            <Question
+              category={category}
+              nr={nr}
+              total={total}
+              question={question}
+            />
+            <Answers
+              incorrectAnswers={incorrectAnswers}
+              correctAnswer={correctAnswer}
+              nextQuestion={this.nextQuestion}
+              isAnswered={isAnswered}
+              increaseScore={this.increaseScore}
+              clickButton={this.handleClickButton}
+              shuffle={this.shuffle}
+            />
+          </View>
+          : <Spinner size="large" />}
+      </View>
+    )
+  }
+
+  gameOver() {
+    const { score, total } = this.state;
+
+    return (
+      <View>
+        <Text>Game Over</Text>
+        <Text>You got {score} of {total} questions right!</Text>
+        <Button text="Go Home" onPress={this.goBack} />
+      </View>
+    )
+  }
+
+  render() {
+    const { gameOver } = this.state;
+
+    return (
+      <Screen>
+        {gameOver ? this.gameOver() : this.gameStart()}
+      </Screen>
+    )
+  }
 }

@@ -1,34 +1,21 @@
-/**
- * @flow
- *
- * The ReAuthScreen is displayed when Firebase requires re-authentication before it can perform
- * sensitive tasks.
- *
- * The modal will check which Providers the current user has available and show a single
- * re-authentication method based on the following priority list:
- * 1) Email
- * 2) Phone
- * 3) Facebook
- * 4) Google
- */
+//The ReAuthScreen is displayed when Firebase requires re-authentication before it can perform sensitive tasks.
+
+// The modal will check which Providers the current user has available and show a single
+// re-authentication method based on the following priority list:
+// 1) Email
+// 2) Phone
+// 3) Facebook
+// 4) Google
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Dimensions, StyleSheet, Text, View } from 'react-native';
 import firebase from 'react-native-firebase';
-
-import type { NavigationScreenProp } from 'react-navigation/src/TypeDefinition';
 
 import Button from '../../../ui/components/Button';
 import EmailAuth from '../../email/components/EmailAuth';
 import PhoneAuth from '../../phone/components/PhoneAuth';
 import SocialAuth from '../../social/components/SocialAuth';
 import { showMessage } from '../../../ui/components/Toast';
-
-/*
- * We use flow type to validate the Props of the component
- */
-type Props = {
-  navigation: NavigationScreenProp<*, *>,
-}
 
 const styles = StyleSheet.create({
   container: {
@@ -53,7 +40,11 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class ReAuthScreen extends React.Component<Props> {
+export default class ReAuthScreen extends React.Component {
+  static propTypes = {
+    navigation: PropTypes.object,
+  }
+
   render() {
     const user = firebase.auth().currentUser;
 
@@ -132,9 +123,7 @@ export default class ReAuthScreen extends React.Component<Props> {
     );
   }
 
-  /**
-   * Called when the user has been succesfully re-authenticated
-   */
+//  Called when the user has been succesfully re-authenticated
   onReAuth = () => {
     showMessage('Re-authentication successful, you may now try again');
     this.props.navigation.goBack();

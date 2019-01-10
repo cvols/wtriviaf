@@ -1,9 +1,4 @@
-/**
- * @flow
- *
- * The Logged In Home screen is a simple screen indicating that the user has logged in.
- */
-import React from 'react'
+import React from 'react';
 import {
   Image,
   StyleSheet,
@@ -15,75 +10,22 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
   Picker,
-  ScrollView,
-} from 'react-native'
-import { RadioButtons } from 'react-native-radio-buttons'
-import firebase from 'react-native-firebase'
+  ScrollView, 
+  Modal, 
+  TouchableHighlight,
+} from 'react-native';
+import { RadioButtons } from 'react-native-radio-buttons';
 
-import Screen from '../../ui/components/Screen'
-import { Button } from '../../ui/components/common/Button'
-import Icon from '../../ui/components/Icon'
-import API from '../../util/API'
+import Screen from '../../ui/components/Screen';
+import { Button } from '../../ui/components/common/Button';
+import Icon from '../../ui/components/Icon';
+import API from '../../util/API';
+import InviteModal from '../../ui/components/InviteModal';
+import { ref, firebaseAuth } from '../../App';
 
-import RNFirebaseLogo from '../../../assets/RNFirebase512x512.png'
+import RNFirebaseLogo from '../../../assets/RNFirebase512x512.png';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    borderWidth: 1,
-    borderColor: 'purple',
-    // margin: 20,
-  },
-  labelContainer: {
-    backgroundColor: 'lightskyblue',
-  },
-  labelBgColor: {
-    flexDirection: 'row',
-    backgroundColor: 'white',
-    margin: 20,
-    borderRadius: 4,
-  },
-  labelText: {
-    flex: 2,
-    fontSize: 14,
-    paddingLeft: 10,
-    paddingVertical: 20,
-    color: 'black',
-  },
-  labelInput: {
-    flex: 3,
-    fontSize: 14,
-    color: 'black',
-  },
-  pickerBgColor: {
-    flexDirection: 'column',
-    backgroundColor: 'white',
-    margin: 20,
-    borderRadius: 4,
-  },
-  pickerLabel: {
-    fontSize: 14,
-    paddingLeft: 10,
-    paddingVertical: 20,
-  },
-  pickerInput: {
-    marginTop: (Platform.OS === 'ios') ? -50 : 5,
-  },
-  buttonContainer: {
-    marginTop: 20,
-    flexDirection: 'column',
-  },
-  iconContainer: {
-    height: 5,
-    width: 12,
-  },
-  icon: {
-    fontSize: 20,
-    color: 'black',
-  },
-});
-
-export default class CreateLeague extends React.Component<*> {
+export default class CreateLeague extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -95,51 +37,59 @@ export default class CreateLeague extends React.Component<*> {
       categories: ['General Knowledge', 'Books', 'Film', 'Music', 'Musicals & Theatres', 'Television', 'Video Games', 'Board Games', 'Science & Nature', 'Computers', 'Mathematics', 'Mythology', 'Sports', 'Geography', 'History', 'Politics', 'Art', 'Celebrities', 'Animals', 'Vehicles', 'Comics', 'Gadgets', 'Japanese Anime & Manga', 'Cartoons & Animations'],
       difficulties: ['Easy', 'Medium', 'Hard'],
     }
+    this.inviteModal = this.inviteModal.bind(this);
   }
 
   componentWillMount() {
-    this.state.categories.sort()
+    const { categories } = this.state;
+
+    categories.sort();
   }
 
-  handleChangeText = (leagueName) => this.setState({ leagueName })
+  handleChangeText = leagueName => this.setState({ leagueName });
 
-  handleChangeCategory = (category) => this.setState({ category })
+  handleChangeCategory = category => this.setState({ category });
+
+  inviteModal = () => this.refs.inviteModal.showAddModal();
+
+  inviteFriends = () => this.props.navigation.navigate('InviteFriends');
 
   onPress = () => {
-    console.log('leagueName: ', this.state.leagueName, 'category: ', this.state.category, 'difficulty: ', this.state.difficulty)
+    const { leagueName, category } = this.state;
+    console.log('leagueName: ', leagueName, 'category: ', category);
 
-    if (this.state.leagueName === '')
-      console.log('lol, dude your shit is empty')
+    if (leagueName === '')
+      console.log('lol, dude your shit is empty');
     // set up alert to tell user that they need to input a league name and choose a category
     else {
-      API.createQuizQuestions(this.state.category)
+      API.createQuizQuestions(category)
         .then((res) => {
-          console.log('res: ', res.results)
+          console.log('res: ', res.results);
 
-          this.setState({
-            questions: res.results,
-          })
+          this.setState({ questions: res.results });
 
-          console.log('this.state.questions: ', this.state.questions)
+          console.log('this.state.questions: ', this.state.questions);
 
-          let authUser = firebase.auth().currentUser
-          console.log(authUser)
+          let authUser = firebaseAuth().currentUser;
 
-          firebase.database().ref('quizzes/').push(
+          ref.child('quizzes/').push(
             {
               questions: res.results,
-              leagueName: this.state.leagueName,
+              leagueName,
               createdId: authUser.uid,
               createdBy: authUser.displayName,
             }
           ).then(() => {
-            console.log("Created quiz in DB successfully")
+            console.log("Created quiz in DB successfully");
+
+            // this.inviteModal()
+            this.inviteFriends();
           }).catch((error) => {
-            console.log(error)
+            console.log(error);
           })
         })
-        .catch((err) => console.log('catch: ', err))
-      // this.props.navigation.navigate('InviteFriends')
+        .catch((err) => console.log('catch: ', err));
+      // this.props.navigation.navigate('InviteFriends');
     }
   }
 
@@ -210,6 +160,10 @@ export default class CreateLeague extends React.Component<*> {
               <View style={styles.buttonContainer}>
                 <Button onPress={this.onPress} text="Create a League" />
               </View>
+
+              <InviteModal ref={'inviteModal'} >
+
+              </InviteModal>
               {/* </KeyboardAvoidingView> */}
             </View>
           </TouchableWithoutFeedback>
@@ -219,5 +173,60 @@ export default class CreateLeague extends React.Component<*> {
   }
 }
 
-
 // <KeyboardAvoidingView behavior={(Platform.OS === 'ios') ? 'padding' : null} enabled>
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    borderWidth: 1,
+    borderColor: 'purple',
+    // margin: 20,
+  },
+  labelContainer: {
+    backgroundColor: 'lightskyblue',
+  },
+  labelBgColor: {
+    flexDirection: 'row',
+    backgroundColor: 'white',
+    margin: 20,
+    borderRadius: 4,
+  },
+  labelText: {
+    flex: 2,
+    fontSize: 14,
+    paddingLeft: 10,
+    paddingVertical: 20,
+    color: 'black',
+  },
+  labelInput: {
+    flex: 3,
+    fontSize: 14,
+    color: 'black',
+  },
+  pickerBgColor: {
+    flexDirection: 'column',
+    backgroundColor: 'white',
+    margin: 20,
+    borderRadius: 4,
+  },
+  pickerLabel: {
+    fontSize: 14,
+    paddingLeft: 10,
+    paddingVertical: 20,
+  },
+  pickerInput: {
+    marginTop: (Platform.OS === 'ios') ? -50 : 5,
+  },
+  buttonContainer: {
+    marginTop: 20,
+    flexDirection: 'column',
+  },
+  iconContainer: {
+    height: 5,
+    width: 12,
+  },
+  icon: {
+    fontSize: 20,
+    color: 'black',
+  },
+});

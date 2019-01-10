@@ -1,21 +1,10 @@
-/**
- * @flow
- *
- * The Screen component acts as a wrapper for all our screens so that any styles can be applied
- * consistently across all screens
- */
-import React, { type Node } from 'react';
+// The Screen component acts as a wrapper for all our screens so that any styles can be applied 
+// consistently across all screens
+import React from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, View } from 'react-native';
 
 import * as Theme from '../../theme';
-
-/*
- * We use flow type to validate the Props of the component
- */
-type Props = {
-  // The children to display within the screen
-  children: Node,
-}
 
 const styles = StyleSheet.create({
   container: {
@@ -24,8 +13,18 @@ const styles = StyleSheet.create({
   },
 });
 
-export default (props: Props) => (
-  <View style={styles.container}>
-    {props.children}
-  </View>
-);
+export default class Screen extends React.Component {
+  static propTypes = {
+    children: PropTypes.node,
+  }
+
+  render() {
+    const { children } = this.props;
+
+    return (
+      <View style={styles.container}>
+        {children}
+      </View>
+    )
+  }
+}
