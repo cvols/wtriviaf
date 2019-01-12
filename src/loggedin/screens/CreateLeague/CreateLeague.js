@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Image,
-  StyleSheet,
   Text,
   View,
   TextInput,
@@ -16,14 +15,15 @@ import {
 } from 'react-native';
 import { RadioButtons } from 'react-native-radio-buttons';
 
-import Screen from '../../ui/components/Screen';
-import { Button } from '../../ui/components/common/Button';
-import Icon from '../../ui/components/Icon';
-import API from '../../util/API';
-import InviteModal from '../../ui/components/InviteModal';
-import { ref, firebaseAuth } from '../../App';
+import styles from './styles';
+import Screen from '../../../ui/components/Screen';
+import { Button } from '../../../ui/components/common/Button';
+import Icon from '../../../ui/components/Icon';
+import API from '../../../util/API';
+import InviteModal from '../../../ui/components/InviteModal';
+import { ref, firebaseAuth } from '../../../App';
 
-import RNFirebaseLogo from '../../../assets/RNFirebase512x512.png';
+import RNFirebaseLogo from '../../../../assets/RNFirebase512x512.png';
 
 export default class CreateLeague extends React.Component {
   constructor(props) {
@@ -46,9 +46,13 @@ export default class CreateLeague extends React.Component {
     categories.sort();
   }
 
-  handleChangeText = leagueName => this.setState({ leagueName });
+  handleChangeText = leagueName => this.setState({
+    leagueName,
+  });
 
-  handleChangeCategory = category => this.setState({ category });
+  handleChangeCategory = category => this.setState({
+    category,
+  });
 
   inviteModal = () => this.refs.inviteModal.showAddModal();
 
@@ -175,58 +179,4 @@ export default class CreateLeague extends React.Component {
 
 // <KeyboardAvoidingView behavior={(Platform.OS === 'ios') ? 'padding' : null} enabled>
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    borderWidth: 1,
-    borderColor: 'purple',
-    // margin: 20,
-  },
-  labelContainer: {
-    backgroundColor: 'lightskyblue',
-  },
-  labelBgColor: {
-    flexDirection: 'row',
-    backgroundColor: 'white',
-    margin: 20,
-    borderRadius: 4,
-  },
-  labelText: {
-    flex: 2,
-    fontSize: 14,
-    paddingLeft: 10,
-    paddingVertical: 20,
-    color: 'black',
-  },
-  labelInput: {
-    flex: 3,
-    fontSize: 14,
-    color: 'black',
-  },
-  pickerBgColor: {
-    flexDirection: 'column',
-    backgroundColor: 'white',
-    margin: 20,
-    borderRadius: 4,
-  },
-  pickerLabel: {
-    fontSize: 14,
-    paddingLeft: 10,
-    paddingVertical: 20,
-  },
-  pickerInput: {
-    marginTop: (Platform.OS === 'ios') ? -50 : 5,
-  },
-  buttonContainer: {
-    marginTop: 20,
-    flexDirection: 'column',
-  },
-  iconContainer: {
-    height: 5,
-    width: 12,
-  },
-  icon: {
-    fontSize: 20,
-    color: 'black',
-  },
-});
+

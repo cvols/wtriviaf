@@ -5,15 +5,16 @@
 
 // 1) `redux-form` integration
 // 2) Basic UI state, i.e. the loading modal
-import { createStore, combineReducers } from 'redux'
-import { reducer as formReducer } from 'redux-form'
+import { createStore, combineReducers } from 'redux';
+import { reducer as formReducer } from 'redux-form';
 
-import uiReducer from '../ui/redux/uiReducer'
+import uiReducer from '../ui/redux/uiReducer';
 
 const rootReducer = combineReducers({
   form: formReducer,
   ui: uiReducer,
-})
+});
 
-const store = createStore(rootReducer)
-export default store
+const store = createStore(rootReducer);
+
+export default store;

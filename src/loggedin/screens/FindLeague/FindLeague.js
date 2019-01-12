@@ -1,9 +1,12 @@
 import React from 'react';
-import { View, Text, StyleSheet, Platform, TextInput } from 'react-native';
+import { View, Text, Platform, TextInput } from 'react-native';
 import firebase from 'react-native-firebase';
+import { connect } from 'react-redux';
+import { QuizData } from '../../../ui/redux/reducers/quizData';
 
-import { Button } from '../../ui/components/common/Button';
-import Screen from '../../ui/components/Screen';
+import styles from './styles';
+import { Button } from '../../../ui/components/common/Button';
+import Screen from '../../../ui/components/Screen';
 
 export default class FindLeague extends React.Component {
 	constructor(props) {
@@ -14,25 +17,30 @@ export default class FindLeague extends React.Component {
 				createdBy: '',
 				leagueName: '',
 				questions: {},
-			}
+			},
+			quizData: {},
 		}
 	};
 
-	handleChangeText = (quizId) => this.setState({ quiz: { quizId } });
+	handleChangeText = (quizId) => this.setState({
+		quiz: {
+			quizId,
+		}
+	});
 
 	onPress = () => {
 		const { quizId } = this.state.quiz;
 
 		firebase.database().ref('quizzes/' + quizId).once('value', (data) => {
-			console.log('data._value', data._value.questions[0].question)
 			this.setState({
 				quiz: {
 					createdBy: data._value.createdBy,
 					leagueId: data._value.createdId,
 					leagueName: data._value.leagueName,
 					questions: data._value.questions,
-				}
-			})
+				},
+				quizData: data,
+			});
 		});
 	}
 
@@ -84,56 +92,3 @@ export default class FindLeague extends React.Component {
 		)
 	}
 }
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-	},
-	labelContainer: {
-		backgroundColor: 'lightskyblue',
-	},
-	labelBgColor: {
-		flexDirection: 'row',
-		backgroundColor: 'white',
-		margin: 20,
-		borderRadius: 4,
-	},
-	labelText: {
-		flex: 2,
-		fontSize: 14,
-		paddingLeft: 10,
-		paddingVertical: 20,
-		color: 'black',
-	},
-	labelInput: {
-		flex: 3,
-		fontSize: 14,
-		color: 'black',
-	},
-	pickerBgColor: {
-		flexDirection: 'column',
-		backgroundColor: 'white',
-		margin: 20,
-		borderRadius: 4,
-	},
-	pickerLabel: {
-		fontSize: 14,
-		paddingLeft: 10,
-		paddingVertical: 20,
-	},
-	pickerInput: {
-		marginTop: (Platform.OS === 'ios') ? -50 : 5,
-	},
-	buttonContainer: {
-		marginTop: 20,
-		flexDirection: 'column',
-	},
-	iconContainer: {
-		height: 5,
-		width: 12,
-	},
-	icon: {
-		fontSize: 20,
-		color: 'black',
-	},
-});

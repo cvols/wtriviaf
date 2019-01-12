@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, ActivityIndicator } from 'react-native'
+import { View, Text, ActivityIndicator } from 'react-native'
 
-import Screen from '../../ui/components/Screen'
-import { Container, Card, Button, Spinner } from '../../ui/components/common'
-import Popup from '../../ui/components/Popup'
-import Question from '../../ui/components/Question'
-import Answers from '../../ui/components/Answers'
+import Screen from '../../../ui/components/Screen'
+import { Container, Card, Button, Spinner } from '../../../ui/components/common'
+import Popup from '../../../ui/components/Popup'
+import Question from '../../../ui/components/Question'
+import Answers from '../../../ui/components/Answers'
 
-import API from '../../util/API'
+import API from '../../../util/API'
 
 export default class PlayNow extends Component {
   constructor(props) {

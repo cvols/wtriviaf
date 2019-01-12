@@ -4,16 +4,16 @@ import firebase from 'react-native-firebase';
 import type { NavigationScreenProp } from 'react-navigation/src/TypeDefinition';
 import { connect } from 'react-redux';
 
-import ActionSheet from '../../ui/components/ActionSheet';
-import Icon from '../../ui/components/Icon';
-import List from '../../ui/components/list/List';
-import ListHeader from '../../ui/components/list/ListHeader';
-import ListItem from '../../ui/components/list/ListItem';
-import LogoutButton from '../../auth/core/components/LogoutButton';
-import Screen from '../../ui/components/Screen';
-import SocialAuth from '../../auth/social/components/SocialAuth';
-import { hideLoading, showLoading } from '../../ui/redux/uiActions';
-import { showError, showMessage, showWarning } from '../../ui/components/Toast';
+import ActionSheet from '../../../ui/components/ActionSheet';
+import Icon from '../../../ui/components/Icon';
+import List from '../../../ui/components/list/List';
+import ListHeader from '../../../ui/components/list/ListHeader';
+import ListItem from '../../../ui/components/list/ListItem';
+import LogoutButton from '../../../auth/core/components/LogoutButton';
+import Screen from '../../../ui/components/Screen';
+import SocialAuth from '../../../auth/social/components/SocialAuth';
+import { hideLoading, showLoading } from '../../../ui/redux/uiActions';
+import { showError, showMessage, showWarning } from '../../../ui/components/Toast';
 
 /*
  * We use flow type to validate the Props of the component

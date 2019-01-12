@@ -94,24 +94,24 @@ export default {
     //     difficulty = 'easy'
     // }
 
-    console.log('api category: ', category)
+    console.log('api category: ', category);
 
-    const url = 'https://opentdb.com/api.php?amount=5&category=' + category + '&difficulty=easy&type=multiple'
+    const url = 'https://opentdb.com/api.php?amount=5&category=' + category + '&difficulty=easy&type=multiple';
 
     return fetch(url)
       .then((res) => {
-        console.log(res)
-        return res.json()
-      })
+        console.log(res);
+        return res.json();
+      });
   },
 
   playNow: function() {
-    const url = 'https://opentdb.com/api.php?amount=10&type=multiple&encode=url3986'
+    const url = 'https://opentdb.com/api.php?amount=10&type=multiple&encode=url3986';
 
     return fetch(url)
       .then((res) => {
-        console.log('play now res: ', res)
-        return res.json()
-      })
+        console.log('play now res: ', res);
+        return res.json();
+      });
   }
 }
