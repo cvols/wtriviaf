@@ -1,10 +1,11 @@
 import React from 'react';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, Text, View } from 'react-native';
 
-import Screen from '../../ui/components/Screen';
-import Button from '../../ui/components/Button';
-import API from '../../util/API';
-import RNFirebaseLogo from '../../../assets/RNFirebase512x512.png';
+import styles from './styles';
+import Screen from '../../../ui/components/Screen';
+import Button from '../../../ui/components/Button';
+import API from '../../../util/API';
+import RNFirebaseLogo from '../../../../assets/RNFirebase512x512.png';
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -14,6 +15,7 @@ export default class Home extends React.Component {
     };
   };
 
+  // navigation
   onCreateLeague = () => this.props.navigation.navigate('CreateLeague');
 
   onFindLeague = () => this.props.navigation.navigate('FindLeague');
@@ -43,21 +45,3 @@ export default class Home extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  image: {
-    height: 250,
-    width: 250,
-  },
-  welcome: {
-    alignItems: 'center',
-    flex: 1,
-    justifyContent: 'center',
-    padding: 24,
-  },
-  welcomeText: {
-    fontSize: 20,
-    marginTop: 24,
-    textAlign: 'center',
-  },
-});

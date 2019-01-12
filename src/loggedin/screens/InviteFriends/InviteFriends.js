@@ -1,7 +1,6 @@
 import React from 'react';
 import {
 	Image,
-	StyleSheet,
 	Text,
 	View,
 	TextInput,
@@ -13,7 +12,8 @@ import {
 } from 'react-native';
 import Button from 'react-native-button';
 
-import Screen from '../../ui/components/Screen';
+import styles from './styles';
+import Screen from '../../../ui/components/Screen';
 
 
 export default class InviteFriends extends React.Component {
@@ -47,25 +47,3 @@ export default class InviteFriends extends React.Component {
 }
 
 // <KeyboardAvoidingView behavior={(Platform.OS === 'ios') ? 'padding' : null} enabled>
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: 'tomato'
-	},
-	buttonContainer: {
-		flexDirection: 'row',
-		justifyContent: 'space-around',
-
-	},
-	containerButton: {
-		padding: 8,
-		height: 40,
-		borderRadius: 6,
-		backgroundColor: 'mediumseagreen',
-	},
-	button: {
-		fontSize: 18,
-		color: 'white',
-	},
-});
