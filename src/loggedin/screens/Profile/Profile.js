@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Image, StyleSheet, Text } from 'react-native';
 import firebase from 'react-native-firebase';
-import type { NavigationScreenProp } from 'react-navigation/src/TypeDefinition';
 import { connect } from 'react-redux';
 
 import ActionSheet from '../../../ui/components/ActionSheet';
@@ -14,25 +14,6 @@ import Screen from '../../../ui/components/Screen';
 import SocialAuth from '../../../auth/social/components/SocialAuth';
 import { hideLoading, showLoading } from '../../../ui/redux/uiActions';
 import { showError, showMessage, showWarning } from '../../../ui/components/Toast';
-
-/*
- * We use flow type to validate the Props of the component
- */
-type Props = {
-  // The redux dispatch function
-  dispatch: (Object) => any,
-  navigation: NavigationScreenProp<*, *>,
-}
-
-/*
- * We use flow type to validate the State of the component
- */
-type State = {
-  // Temporarily stores the provider ID being edited
-  editSocialProviderId?: string,
-  // The current Firebase user
-  user: firebase.auth.User,
-}
 
 const styles = StyleSheet.create({
   container: {
@@ -62,10 +43,10 @@ const styles = StyleSheet.create({
   },
 });
 
-class Profile extends React.Component<Props, State> {
-  editEmailActionSheet: ActionSheet;
-  editSocialActionSheet: ActionSheet;
-  userSubscription: () => any;
+class Profile extends React.Component {
+  static propTypes = {
+    dispatch: PropTypes.func,
+  }
 
   // Set the navigation options for `react-navigation`
   static navigationOptions = {
@@ -73,8 +54,9 @@ class Profile extends React.Component<Props, State> {
     headerTitle: 'Profile',
   };
 
-  constructor(props: Props, context: any) {
+  constructor(props, context) {
     super(props, context);
+
     // Set the default state of the component
     this.state = {
       user: firebase.auth().currentUser,
@@ -230,7 +212,7 @@ class Profile extends React.Component<Props, State> {
   /**
    * Called when the user has clicked a button on the edit email action sheet
    */
-  onEditEmailActionSheetPress = (buttonIndex: number) => {
+  onEditEmailActionSheetPress = (buttonIndex) => {
     const { navigation } = this.props;
     if (buttonIndex === 0) {
       // Navigate to the ChangeEmail screen
@@ -268,7 +250,7 @@ class Profile extends React.Component<Props, State> {
   /**
    * Called by `onEditFacebook`, `onEditGoogle` and `onEditPhone`
    */
-  onEditSocial = (providerId: string) => {
+  onEditSocial = (providerId) => {
     this.setState({ editSocialProviderId: providerId });
     this.editSocialActionSheet.show();
   }
@@ -276,7 +258,7 @@ class Profile extends React.Component<Props, State> {
   /**
    *
    */
-  onEditSocialActionSheetPress = (buttonIndex: number) => {
+  onEditSocialActionSheetPress = (buttonIndex) => {
     const { editSocialProviderId } = this.state;
     if (editSocialProviderId && (buttonIndex === 0 || buttonIndex === '0')) {
       // Start the unlink process to remove the account
@@ -310,7 +292,7 @@ class Profile extends React.Component<Props, State> {
   /**
    * Handles removing a social provider from the user's Firebase account
    */
-  unlink = async (providerId: string) => {
+  unlink = async (providerId) => {
     const { currentUser } = firebase.auth();
     // Check that the user isn't trying to remove the last linked provider
     if (currentUser && currentUser.providerData.length > 1) {
