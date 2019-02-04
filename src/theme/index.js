@@ -11,7 +11,7 @@ export const BUTTON_DISABLED = '#ccc';
 
 export const ERROR_COLOR = '#ed2f2f';
 
-export const SCREEN_BACKGROUND_COLOR = '#fff';
+export const SCREEN_BACKGROUND_COLOR = 'seagreen';
 
 export const TOAST_TEXT_COLOR = '#fff';
 export const TOAST_ERROR_BACKGROUND_COLOR = ERROR_COLOR;

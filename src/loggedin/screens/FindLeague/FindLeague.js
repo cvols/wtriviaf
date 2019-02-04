@@ -8,7 +8,7 @@ import styles from './styles';
 import { Button } from '../../../ui/components/common/Button';
 import Screen from '../../../ui/components/Screen';
 
-export default class FindLeague extends React.Component {
+class FindLeague extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -41,7 +41,9 @@ export default class FindLeague extends React.Component {
 				},
 				quizData: data,
 			});
+			this.props.onPress(data);
 		});
+
 	}
 
 	startQuiz = () => {
@@ -64,6 +66,7 @@ export default class FindLeague extends React.Component {
 	}
 
 	render() {
+		console.log('render', this.props);
 		const { quizId, createdBy } = this.state.quiz;
 
 		return (
@@ -92,3 +95,26 @@ export default class FindLeague extends React.Component {
 		)
 	}
 }
+
+function mapStateToProps(state) {
+	console.log('mapStateToProps', state);
+
+	return {
+		quizData: state.quizData
+	}
+}
+
+function mapDispatchToProps(dispatch) {
+	return {
+		onPress: (data) => {
+			const action = {
+				type: 'SAVE_QUIZ_DATA',
+				payload: data
+			};
+
+			dispatch(action);
+		}
+	}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(FindLeague);

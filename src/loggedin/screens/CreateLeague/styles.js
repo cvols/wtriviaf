@@ -1,17 +1,11 @@
 import { StyleSheet, Platform } from 'react-native';
 
 export default StyleSheet.create({
-  container: {
-    flex: 1,
-    borderWidth: 1,
-    borderColor: 'purple',
-    // margin: 20,
-  },
   labelContainer: {
     backgroundColor: 'lightskyblue',
   },
   labelBgColor: {
-    flexDirection: 'row',
+    flexDirection: 'row', 
     backgroundColor: 'white',
     margin: 20,
     borderRadius: 4,
