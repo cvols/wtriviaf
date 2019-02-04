@@ -9,8 +9,8 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
   Picker,
-  ScrollView, 
-  Modal, 
+  ScrollView,
+  Modal,
   TouchableHighlight,
 } from 'react-native';
 import { RadioButtons } from 'react-native-radio-buttons';
@@ -20,7 +20,7 @@ import Screen from '../../../ui/components/Screen';
 import { Button } from '../../../ui/components/common/Button';
 import Icon from '../../../ui/components/Icon';
 import API from '../../../util/API';
-import InviteModal from '../../../ui/components/InviteModal';
+// import InviteModal from '../../../ui/components/InviteModal';
 import { ref, firebaseAuth } from '../../../App';
 
 import RNFirebaseLogo from '../../../../assets/RNFirebase512x512.png';
@@ -102,10 +102,10 @@ export default class CreateLeague extends React.Component {
       <ScrollView>
         <Screen>
           <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
-            <View style={styles.container}>
+            <View>
               {/* <KeyboardAvoidingView behavior="position"> */}
 
-              <View style={styles.labelContainer}>
+              {/* <View style={styles.labelContainer}> */}
                 <View style={styles.labelBgColor}>
                   <Text style={styles.labelText}>League Name:</Text>
                   <TextInput
@@ -116,7 +116,7 @@ export default class CreateLeague extends React.Component {
                     value={this.state.leagueName}
                   />
                 </View>
-              </View>
+              {/* </View> */}
 
               <View style={styles.labelContainer}>
                 <View style={styles.pickerBgColor}>
@@ -165,9 +165,9 @@ export default class CreateLeague extends React.Component {
                 <Button onPress={this.onPress} text="Create a League" />
               </View>
 
-              <InviteModal ref={'inviteModal'} >
+              {/* <InviteModal ref={'inviteModal'} >
 
-              </InviteModal>
+              </InviteModal> */}
               {/* </KeyboardAvoidingView> */}
             </View>
           </TouchableWithoutFeedback>
