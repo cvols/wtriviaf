@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 
 class Duel extends React.Component {
 	render() {
+		const {quizData} = this.props
 		console.log('Duel this.props: ', this.props);
 		return (
 			<View>
@@ -17,8 +18,10 @@ class Duel extends React.Component {
 const mapStateToProps = (state, props) => {
 	console.log('mapStateToProps', state);
 	console.log('props', props);
-
-	return {}
+        
+	return {
+	    quizDate = state.quizData   
+	}
 }
 
-export default connect(mapStateToProps)(Duel);
+export default connect(mapStateToProps,{})(Duel);
