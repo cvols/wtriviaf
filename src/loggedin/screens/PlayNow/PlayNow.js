@@ -24,6 +24,7 @@ export default class PlayNow extends Component {
       score: 0,
       total: 0,
     };
+  
     this.nextQuestion = this.nextQuestion.bind(this);
     this.handleClickButton = this.handleClickButton.bind(this);
     this.increaseScore = this.increaseScore.bind(this);
@@ -43,10 +44,9 @@ export default class PlayNow extends Component {
           total: res.results.length,
           category: res.results[nr].category,
           nr: nr + 1,
+        }, () => {
+          this.shuffle();
         });
-        console.log('this.state.questions: ', this.state.questions);
-        console.log('correctAnswer: ', this.state.correctAnswer);
-        this.shuffle();
       })
       .catch((err) => console.log('catch: ', err));
   }
@@ -62,13 +62,13 @@ export default class PlayNow extends Component {
       while (0 !== currentIndex) {
 
         // Pick a remaining element...
-        randomIndex = Math.floor(Math.random() * currentIndex)
-        currentIndex -= 1
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
 
         // And swap it with the current element.
-        temporaryValue = array[currentIndex]
-        array[currentIndex] = array[randomIndex]
-        array[randomIndex] = temporaryValue
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
       }
 
       return array;

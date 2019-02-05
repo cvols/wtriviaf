@@ -15,8 +15,6 @@ export default class Answers extends React.Component {
   
     console.log('user answer: ', answer);
     console.log('this.props.correctAnswer: ', correctAnswer);
-    console.log('this.props: ', this.props);
-    console.log('this.props.isAnswered: ', isAnswered);
 
     let correct = false;
 
@@ -53,14 +51,11 @@ export default class Answers extends React.Component {
       <View>
         {incorrectAnswers.map((answer, i) => {
           let style = styles.answer;
-          console.log('bgColor: ', {bgColor, i});
 
           if (bgColor && bgColor.index === i) {
             console.log('isTrue');
             style = bgColor.correct ? styles.answerCorrect : styles.answerWrong;
           }
-
-          console.log('style: ', style);
 
           return (
             <TouchableOpacity key={answer} onPress={() => this.checkAnswer(answer, i)}>
