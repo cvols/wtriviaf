@@ -29,23 +29,25 @@ class Duel extends React.Component {
     this.shuffle = this.shuffle.bind(this);
   }
 
-  async componentWillMount() {
+  componentWillMount() {
     const { quizData } = this.props;
-    const { nr } = this.state;
+    const { nr } = this.state;    
 
     this.setState({
-      questions: quizData._value,
-      question: quizData._value.questions[nr].question,
-      correctAnswer: quizData._value.questions[nr].correct_answer,
-      incorrectAnswers: [quizData._value.questions[nr].correct_answer, quizData._value.questions[nr].incorrect_answers[0], quizData._value.questions[nr].incorrect_answers[1], quizData._value.questions[nr].incorrect_answers[2]],
-      total: quizData._value.questions.length,
-      category: quizData._value.questions[nr].category,
+      questions: quizData.quizData._value,
+      question: quizData.quizData._value.questions[nr].question,
+      correctAnswer: quizData.quizData._value.questions[nr].correct_answer,
+      incorrectAnswers: [quizData.quizData._value.questions[nr].correct_answer, quizData.quizData._value.questions[nr].incorrect_answers[0], quizData.quizData._value.questions[nr].incorrect_answers[1], quizData.quizData._value.questions[nr].incorrect_answers[2]],
+      total: quizData.quizData._value.questions.length,
+      category: quizData.quizData._value.questions[nr].category,
       nr: this.state.nr + 1,
     }, () => {
       this.shuffle();
     });
   }
+
   shuffle() {
+    console.log('incorrect answer: ', this.state.incorrectAnswers)
     const { incorrectAnswers } = this.state;
     const array = incorrectAnswers;
 
@@ -163,7 +165,7 @@ class Duel extends React.Component {
 }
 
 const mapStateToProps = (state, props) => {
-  console.log('mapStateToProps', state);
+  console.log('Duel mapStateToProps', state);
 
   return {
     quizData: state.quizData

@@ -16,7 +16,6 @@ import Tabs from '../../../ui/components/tab/Tabs';
 import Tab from '../../../ui/components/tab/Tab';
 
 export default class Login extends React.Component {
-  // Set the navigation options for `react-navigation`
   static navigationOptions = {
     headerTitle: 'Log in',
   };

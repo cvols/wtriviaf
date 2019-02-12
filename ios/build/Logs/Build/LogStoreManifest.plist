@@ -6,6 +6,35 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
+		<key>5E7E4A51-FB2A-4715-A6B9-0EFF0D79E551</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5E7E4A51-FB2A-4715-A6B9-0EFF0D79E551.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>wtriviaf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>wtriviaf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace wtriviaf with scheme wtriviaf and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>571621992.18671894</real>
+			<key>timeStoppedRecording</key>
+			<real>571621996.64548898</real>
+			<key>title</key>
+			<string>Building workspace wtriviaf with scheme wtriviaf and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>5E7E4A51-FB2A-4715-A6B9-0EFF0D79E551</string>
+		</dict>
 		<key>8D84248B-1AB3-4AFD-A3A7-AD4EC5867F64</key>
 		<dict>
 			<key>className</key>

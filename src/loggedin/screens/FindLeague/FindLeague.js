@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Platform, TextInput } from 'react-native';
 import firebase from 'react-native-firebase';
 import { connect } from 'react-redux';
-import { QuizData } from '../../../ui/redux/reducers/quizData';
+// import { QuizData } from '../../../ui/redux/reducers/quizData';
 
 import styles from './styles';
 import { Button } from '../../../ui/components/common/Button';
